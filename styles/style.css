@@ -30,6 +30,10 @@ header#intro nav {
   height: 110px;
   margin-inline: auto;
   margin-top: 80px;
+  transition: 0.2s;
+}
+header#intro nav:hover {
+  transform: scale(1.1);
 }
 header#intro nav a {
   color: #192626;

@@ -44,6 +44,12 @@ header#intro {
     margin-inline: auto;
     margin-top: 80px;
 
+    transition: 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
     a {
       color: $color1;
       text-decoration: none;
