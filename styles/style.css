@@ -1,1 +1,44 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header#intro {
+  background-image: url(../assets/imgs/floresta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+header#intro nav {
+  font-family: "Bebas Neue", cursive;
+  border: solid 5px #192626;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 810px;
+  height: 110px;
+  margin-inline: auto;
+  margin-top: 80px;
+}
+header#intro nav a {
+  color: #192626;
+  text-decoration: none;
+  font-size: 42px;
+}
+header#intro nav a:hover {
+  color: #5d7f8c;
+}
+header#intro section {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+$color1: #192626;
+$color2: #243b40;
+$color3: #5d7f8c;
+$color4: #7297a6;
+$color5: #d8d9d7;
+$bebasNune: "Bebas Neue", cursive;
+$robotoSlab: "Roboto Slab", serif;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+header#intro {
+  background-image: url(../assets/imgs/floresta.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+
+  height: 100%;
+  width: 100%;
+
+  nav {
+    font-family: $bebasNune;
+
+    border: solid 5px $color1;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 810px;
+    height: 110px;
+
+    margin-inline: auto;
+    margin-top: 80px;
+
+    a {
+      color: $color1;
+      text-decoration: none;
+      font-size: 42px;
+
+      &:hover {
+        color: $color3;
+      }
+    }
+  }
+
+  section {
+    display: none;
+  }
+}
