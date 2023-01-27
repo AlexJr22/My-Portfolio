@@ -23,7 +23,10 @@ header#intro {
   background-repeat: no-repeat;
   background-size: cover;
 
+  position: relative;
+
   display: flex;
+  flex-direction: column;
 
   height: 100%;
   width: 100%;
@@ -62,6 +65,17 @@ header#intro {
   }
 
   section {
-    display: none;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #192626a1, #00000000);
+
+    right: 200px;
+    bottom: 77px;
+
+    display: flex;
+
+    height: 435px;
+    max-width: 690px;
+
+    border-radius: 20px 20px 0px 0px;
   }
 }
