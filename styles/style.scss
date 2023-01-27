@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300;400&display=swap");
 $color1: #192626;
 $color2: #243b40;
 $color3: #5d7f8c;
@@ -65,17 +65,50 @@ header#intro {
   }
 
   section {
-    position: absolute;
-    background-image: linear-gradient(to bottom, #192626a1, #00000000);
+    font-family: $robotoSlab;
+    font-weight: 300;
+    color: $color5;
 
-    right: 200px;
-    bottom: 77px;
+    position: absolute;
+    background-image: linear-gradient(to bottom, #19262698, #00000000);
+
+    left: 50%;
+    bottom: 30px;
 
     display: flex;
+    flex-direction: column;
 
     height: 435px;
-    max-width: 690px;
+    width: 650px;
 
     border-radius: 20px 20px 0px 0px;
+
+    padding: 40px;
+    transform: scale(0.9);
+
+    h1 {
+      font-weight: 300;
+      font-size: 100px;
+    }
+
+    h2 {
+      font-size: 72px;
+      font-weight: 300;
+    }
+
+    p {
+      font-size: 32px;
+    }
+
+    div#containerImgs {
+      display: flex;
+
+      margin-top: 5px;
+      gap: 30px;
+      img {
+        width: 55px;
+        height: 55px;
+      }
+    }
   }
 }
