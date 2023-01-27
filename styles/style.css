@@ -114,7 +114,7 @@ section#containerSM aside img {
 section#containerSM aside div {
   height: 100%;
   width: 100%;
-  background-image: linear-gradient(to top, black, transparent 55%);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   display: flex;
   flex-direction: column;
   align-items: center;
