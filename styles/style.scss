@@ -13,8 +13,10 @@ $robotoSlab: "Roboto Slab", serif;
   box-sizing: border-box;
 }
 
-body {
-  width: 100vw;
+body,
+html {
+  // display: flex;
+  max-width: 100vw;
   height: 100vh;
 }
 
