@@ -122,6 +122,8 @@ section#containerSM {
   display: flex;
 
   aside {
+    position: relative;
+
     background-image: url(../assets/imgs/lago_com_montanha.jpg);
     background-size: contain;
     background-repeat: no-repeat;
@@ -143,11 +145,22 @@ section#containerSM {
 
     box-shadow: 4px 4px 15px #0000006b;
 
-    img {
+    img#triangulo {
+      position: absolute;
+      margin: 0;
+
+      top: 0;
+      left: 0;
+
+      width: 101%;
+      opacity: 0.9;
+    }
+
+    img#foto {
       min-width: 400px;
       min-height: 400px;
 
-      margin-top: 50px;
+      margin-top: 45px;
       filter: drop-shadow(7px 7px 7px #000000cb);
     }
 

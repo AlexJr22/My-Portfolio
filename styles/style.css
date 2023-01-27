@@ -90,6 +90,7 @@ section#containerSM {
   display: flex;
 }
 section#containerSM aside {
+  position: relative;
   background-image: url(../assets/imgs/lago_com_montanha.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -105,10 +106,18 @@ section#containerSM aside {
   overflow: hidden;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4196078431);
 }
-section#containerSM aside img {
+section#containerSM aside img#triangulo {
+  position: absolute;
+  margin: 0;
+  top: 0;
+  left: 0;
+  width: 101%;
+  opacity: 0.9;
+}
+section#containerSM aside img#foto {
   min-width: 400px;
   min-height: 400px;
-  margin-top: 50px;
+  margin-top: 45px;
   filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.7960784314));
 }
 section#containerSM aside div {
