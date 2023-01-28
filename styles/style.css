@@ -54,6 +54,9 @@ header#Hd-intro nav button#btn-menu {
 header#Hd-intro nav button#btn-menu .bi-list {
   fill: #192626;
 }
+header#Hd-intro nav button#btn-menu .bi-x-lg {
+  display: none;
+}
 header#Hd-intro #container-section {
   display: flex;
   justify-content: flex-end;
@@ -67,11 +70,11 @@ header#Hd-intro section#intro {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   color: #d8d9d7;
-  background-image: linear-gradient(to bottom, rgba(25, 38, 38, 0.5960784314), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(25, 38, 38, 0.4549019608), rgba(0, 0, 0, 0));
   display: flex;
   flex-direction: column;
   height: 435px;
-  max-width: 650px;
+  min-width: 50%;
   border-radius: 20px 20px 0px 0px;
   padding: 40px;
   transform: scale(0.9);
@@ -175,12 +178,38 @@ section#containerSM section#SobreMim div p {
 
 @media screen and (max-width: 1045px) {
   header#Hd-intro nav {
-    max-width: 100px;
-    min-width: 100px;
-    max-height: 100px;
-    min-height: 100px;
+    position: absolute;
+    width: 70px;
     border: 0;
     margin: 10px;
+  }
+  header#Hd-intro nav.active {
+    width: 400px;
+    height: 99%;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: #243b40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header#Hd-intro nav.active a {
+    display: block;
+    width: 75%;
+  }
+  header#Hd-intro nav.active #btn-menu {
+    border-color: #192626;
+    border-radius: 0.3rem;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  header#Hd-intro nav.active #btn-menu .bi-list {
+    display: none;
+  }
+  header#Hd-intro nav.active #btn-menu .bi-x-lg {
+    fill: #192626;
+    display: block;
   }
   header#Hd-intro nav:hover {
     transform: scale(1);
@@ -197,30 +226,35 @@ section#containerSM section#SobreMim div p {
     background-color: transparent;
     border: #243b40 solid;
   }
-  header#Hd-intro nav button#btn-menu:hover {
+  header#Hd-intro nav button#btn-menu:active {
     border: #5d7f8c solid;
   }
-  header#Hd-intro nav button#btn-menu:hover .bi-list {
+  header#Hd-intro nav button#btn-menu:active .bi-list {
     fill: #5d7f8c;
   }
   header#Hd-intro #container-section {
     justify-content: center;
+    margin-top: 150px;
   }
   header#Hd-intro #container-section section#intro {
     width: 80%;
   }
 }
 @media screen and (max-width: 675px) {
-  body {
-    overflow-x: auto;
-  }
   header#Hd-intro nav {
-    transition: 0.5s;
-    width: 90%;
-    transition: 0.5s;
+    transition: 0.3s;
+    width: 70px;
+    border: 0;
+    border-radius: none;
+  }
+  header#Hd-intro nav.active {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
   }
   header#Hd-intro nav a {
-    font-size: 2rem;
+    font-size: 3rem;
     transition: 0.5s;
   }
   header#Hd-intro #container-section {
@@ -229,6 +263,7 @@ section#containerSM section#SobreMim div p {
   header#Hd-intro #container-section section#intro {
     transition: 0.5s;
     background-image: none;
+    border-radius: 0;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -237,12 +272,15 @@ section#containerSM section#SobreMim div p {
   }
   header#Hd-intro #container-section section#intro h1 {
     font-size: 4rem;
+    text-shadow: 4px 4px 4px black;
   }
   header#Hd-intro #container-section section#intro h2 {
     font-size: 2rem;
+    text-shadow: 4px 4px 4px black;
   }
   header#Hd-intro #container-section section#intro p {
     font-size: 2rem;
+    text-shadow: 4px 4px 4px black;
   }
   header#Hd-intro #container-section section#intro #containerImgs {
     width: 100%;
