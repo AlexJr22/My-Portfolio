@@ -18,9 +18,11 @@ html {
   // display: flex;
   max-width: 100vw;
   height: 100vh;
+
+  overflow-x: hidden;
 }
 
-header#intro {
+header#Hd-intro {
   background-image: url(../assets/imgs/floresta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,6 +36,7 @@ header#intro {
   width: 100%;
 
   box-shadow: 0px 5px 15px #00000080;
+
   nav {
     font-family: $bebasNune;
 
@@ -44,8 +47,8 @@ header#intro {
     justify-content: space-around;
     align-items: center;
 
-    width: 810px;
-    height: 110px;
+    width: 60%;
+    min-height: 110px;
 
     margin-inline: auto;
     margin-top: 80px;
@@ -65,24 +68,39 @@ header#intro {
         color: $color3;
       }
     }
+
+    button#btn-menu {
+      display: none;
+
+      .bi-list {
+        fill: $color1;
+      }
+    }
   }
 
-  section {
+  #container-section {
+    // border: yellow solid 1px;
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: max-content;
+
+    margin-top: 40px;
+  }
+
+  section#intro {
     font-family: $robotoSlab;
     font-weight: 300;
     color: $color5;
 
-    position: absolute;
     background-image: linear-gradient(to bottom, #19262698, #00000000);
-
-    left: 50%;
-    bottom: 30px;
 
     display: flex;
     flex-direction: column;
 
     height: 435px;
-    width: 650px;
+    max-width: 650px;
 
     border-radius: 20px 20px 0px 0px;
 
@@ -211,6 +229,113 @@ section#containerSM {
         color: #fff;
         margin-top: 15px;
         font-size: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1045px) {
+  header#Hd-intro {
+    nav {
+      max-width: 100px;
+      min-width: 100px;
+      max-height: 100px;
+      min-height: 100px;
+
+      border: 0;
+
+      margin: 10px;
+
+      &:hover {
+        transform: scale(1);
+      }
+
+      a {
+        display: none;
+      }
+
+      button#btn-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 60px;
+        height: 60px;
+
+        background-color: transparent;
+        border: $color2 solid;
+
+        &:hover {
+          border: $color3 solid;
+
+          .bi-list {
+            fill: $color3;
+          }
+        }
+      }
+    }
+
+    #container-section {
+      justify-content: center;
+
+      section#intro {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  body {
+    overflow-x: auto;
+  }
+  header#Hd-intro {
+    nav {
+      transition: 0.5s;
+      width: 90%;
+      transition: 0.5s;
+      a {
+        font-size: 2rem;
+        transition: 0.5s;
+      }
+    }
+
+    #container-section {
+      transition: 0.5s;
+
+      section#intro {
+        transition: 0.5s;
+        background-image: none;
+
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        transform: scale(1);
+        transition: 0.5s;
+
+        h1 {
+          font-size: 4rem;
+        }
+        h2 {
+          font-size: 2rem;
+        }
+        p {
+          font-size: 2rem;
+        }
+
+        #containerImgs {
+          width: 100%;
+          height: 100%;
+
+          margin-top: 15px;
+
+          display: grid;
+          grid-template-areas:
+            "img img img"
+            "img img img";
+
+          justify-content: space-evenly;
+        }
       }
     }
   }

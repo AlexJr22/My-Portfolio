@@ -10,9 +10,10 @@ body,
 html {
   max-width: 100vw;
   height: 100vh;
+  overflow-x: hidden;
 }
 
-header#intro {
+header#Hd-intro {
   background-image: url(../assets/imgs/floresta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,63 +24,75 @@ header#intro {
   width: 100%;
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5019607843);
 }
-header#intro nav {
+header#Hd-intro nav {
   font-family: "Bebas Neue", cursive;
   border: solid 5px #192626;
   border-radius: 15px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 810px;
-  height: 110px;
+  width: 60%;
+  min-height: 110px;
   margin-inline: auto;
   margin-top: 80px;
   transition: 0.2s;
 }
-header#intro nav:hover {
+header#Hd-intro nav:hover {
   transform: scale(1.1);
 }
-header#intro nav a {
+header#Hd-intro nav a {
   color: #192626;
   text-decoration: none;
   font-size: 42px;
 }
-header#intro nav a:hover {
+header#Hd-intro nav a:hover {
   color: #5d7f8c;
 }
-header#intro section {
+header#Hd-intro nav button#btn-menu {
+  display: none;
+}
+header#Hd-intro nav button#btn-menu .bi-list {
+  fill: #192626;
+}
+header#Hd-intro #container-section {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 40px;
+}
+header#Hd-intro section#intro {
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   color: #d8d9d7;
-  position: absolute;
   background-image: linear-gradient(to bottom, rgba(25, 38, 38, 0.5960784314), rgba(0, 0, 0, 0));
-  left: 50%;
-  bottom: 30px;
   display: flex;
   flex-direction: column;
   height: 435px;
-  width: 650px;
+  max-width: 650px;
   border-radius: 20px 20px 0px 0px;
   padding: 40px;
   transform: scale(0.9);
 }
-header#intro section h1 {
+header#Hd-intro section#intro h1 {
   font-weight: 300;
   font-size: 100px;
 }
-header#intro section h2 {
+header#Hd-intro section#intro h2 {
   font-size: 72px;
   font-weight: 300;
 }
-header#intro section p {
+header#Hd-intro section#intro p {
   font-size: 32px;
 }
-header#intro section div#containerImgs {
+header#Hd-intro section#intro div#containerImgs {
   display: flex;
   margin-top: 5px;
   gap: 30px;
 }
-header#intro section div#containerImgs img {
+header#Hd-intro section#intro div#containerImgs img {
   width: 55px;
   height: 55px;
 }
@@ -158,4 +171,85 @@ section#containerSM section#SobreMim div p {
   color: #fff;
   margin-top: 15px;
   font-size: 24px;
+}
+
+@media screen and (max-width: 1045px) {
+  header#Hd-intro nav {
+    max-width: 100px;
+    min-width: 100px;
+    max-height: 100px;
+    min-height: 100px;
+    border: 0;
+    margin: 10px;
+  }
+  header#Hd-intro nav:hover {
+    transform: scale(1);
+  }
+  header#Hd-intro nav a {
+    display: none;
+  }
+  header#Hd-intro nav button#btn-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: #243b40 solid;
+  }
+  header#Hd-intro nav button#btn-menu:hover {
+    border: #5d7f8c solid;
+  }
+  header#Hd-intro nav button#btn-menu:hover .bi-list {
+    fill: #5d7f8c;
+  }
+  header#Hd-intro #container-section {
+    justify-content: center;
+  }
+  header#Hd-intro #container-section section#intro {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 675px) {
+  body {
+    overflow-x: auto;
+  }
+  header#Hd-intro nav {
+    transition: 0.5s;
+    width: 90%;
+    transition: 0.5s;
+  }
+  header#Hd-intro nav a {
+    font-size: 2rem;
+    transition: 0.5s;
+  }
+  header#Hd-intro #container-section {
+    transition: 0.5s;
+  }
+  header#Hd-intro #container-section section#intro {
+    transition: 0.5s;
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  header#Hd-intro #container-section section#intro h1 {
+    font-size: 4rem;
+  }
+  header#Hd-intro #container-section section#intro h2 {
+    font-size: 2rem;
+  }
+  header#Hd-intro #container-section section#intro p {
+    font-size: 2rem;
+  }
+  header#Hd-intro #container-section section#intro #containerImgs {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    display: grid;
+    grid-template-areas: "img img img" "img img img";
+    justify-content: space-evenly;
+  }
 }/*# sourceMappingURL=style.css.map */
