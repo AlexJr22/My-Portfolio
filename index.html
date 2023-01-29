@@ -50,7 +50,7 @@
       </nav>
 
       <div id="container-section">
-        <section id="intro">
+        <section id="intro" class="tiltEffect">
           <h1>Portfólio</h1>
           <h2>Alex Junior</h2>
           <p>Desenvolvedor Web - FullStack</p>
@@ -75,6 +75,7 @@
         <img id="triangulo" src="assets/imgs/triangulp.svg" alt="triângulo" />
         <img
           id="foto"
+          class="tiltEffectImg"
           src="assets/imgs/minha_foto.png"
           alt="foto alex junior"
         />
@@ -119,5 +120,18 @@
     </section>
 
     <script src="scripts/script.js"></script>
+    <script src="scripts/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".tiltEffect"), {
+        max: 15,
+        speed: 500,
+        glare: true,
+        "max-glare": 0.2,
+      });
+      VanillaTilt.init(document.querySelector(".tiltEffectImg"), {
+        max: 15,
+        speed: 500,
+      });
+    </script>
   </body>
 </html>

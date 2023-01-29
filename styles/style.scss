@@ -99,28 +99,34 @@ header#Hd-intro {
     flex-direction: column;
 
     height: 435px;
-    min-width: 50%;
+    min-width: 45%;
+    margin-right: 20px;
 
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 1rem;
 
     padding: 40px;
-    transform: scale(0.9);
 
+    transform-style: preserve-3d;
+    transform: perspective(1000px);
     h1 {
+      transform: translateZ(70px);
       font-weight: 300;
       font-size: 100px;
     }
 
     h2 {
+      transform: translateZ(70px);
       font-size: 72px;
       font-weight: 300;
     }
 
     p {
+      transform: translateZ(70px);
       font-size: 32px;
     }
 
     div#containerImgs {
+      transform: translateZ(70px);
       display: flex;
 
       margin-top: 5px;
@@ -146,7 +152,7 @@ section#containerSM {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    min-width: 470px;
+    width: 470px;
 
     margin-left: 30px;
 
@@ -215,6 +221,9 @@ section#containerSM {
   section#SobreMim {
     font-family: $robotoSlab;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 
     h2 {
       color: $color5;
@@ -323,6 +332,7 @@ section#containerSM {
 
       section#intro {
         width: 80%;
+        margin-right: 0;
       }
     }
   }
@@ -391,8 +401,10 @@ section#containerSM {
     }
 
     section#SobreMim {
+      text-align: justify;
+      width: auto;
       background-color: #192626a2;
-      padding-left: 100px;
+      padding-inline: 100px;
     }
   }
 }
@@ -420,10 +432,7 @@ section#containerSM {
     }
 
     #container-section {
-      transition: 0.5s;
-
       section#intro {
-        transition: 0.5s;
         background-image: none;
         border-radius: 0;
 
@@ -486,7 +495,32 @@ section#containerSM {
     }
 
     section#SobreMim {
-      padding-left: 50px;
+      text-align: start;
+      padding-inline: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  section#containerSM {
+    aside#my-data {
+      display: flex;
+
+      justify-content: center;
+      flex-direction: column;
+
+      img#foto {
+        padding: 0;
+        margin: 0;
+        margin-top: 15px;
+        width: 170px;
+        height: 170px;
+      }
+      div {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+      }
     }
   }
 }
