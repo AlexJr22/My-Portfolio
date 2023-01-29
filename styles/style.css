@@ -17,7 +17,6 @@ header#Hd-intro {
   background-image: url(../assets/imgs/floresta.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -36,6 +35,7 @@ header#Hd-intro nav {
   margin-inline: auto;
   margin-top: 80px;
   transition: 0.2s;
+  z-index: 100;
 }
 header#Hd-intro nav:hover {
   transform: scale(1.1);
@@ -181,35 +181,7 @@ section#containerSM section#SobreMim div p {
     position: absolute;
     width: 70px;
     border: 0;
-    margin: 10px;
-  }
-  header#Hd-intro nav.active {
-    width: 400px;
-    height: 99%;
-    border-radius: 5px;
-    z-index: 10;
-    background-color: #243b40;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  header#Hd-intro nav.active a {
-    display: block;
-    width: 75%;
-  }
-  header#Hd-intro nav.active #btn-menu {
-    border-color: #192626;
-    border-radius: 0.3rem;
-    position: absolute;
-    top: 30px;
-    right: 30px;
-  }
-  header#Hd-intro nav.active #btn-menu .bi-list {
-    display: none;
-  }
-  header#Hd-intro nav.active #btn-menu .bi-x-lg {
-    fill: #192626;
-    display: block;
+    margin: 30px 0px 0px 10px;
   }
   header#Hd-intro nav:hover {
     transform: scale(1);
@@ -223,14 +195,47 @@ section#containerSM section#SobreMim div p {
     align-items: center;
     width: 60px;
     height: 60px;
-    background-color: transparent;
-    border: #243b40 solid;
+    background-color: rgba(118, 130, 133, 0.4666666667);
+    border: none;
+    border-radius: 0.3rem;
   }
   header#Hd-intro nav button#btn-menu:active {
-    border: #5d7f8c solid;
+    border: #d8d9d7 solid;
   }
   header#Hd-intro nav button#btn-menu:active .bi-list {
+    fill: #d8d9d7;
+  }
+  header#Hd-intro nav button#btn-menu:active .bi-x-lg {
+    fill: #d8d9d7;
+  }
+  header#Hd-intro nav.active {
+    width: 400px;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    z-index: 10;
+    background-color: #243b40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header#Hd-intro nav.active a {
+    display: block;
+    width: 75%;
+  }
+  header#Hd-intro nav.active #btn-menu {
+    border-color: #5d7f8c;
+    background-color: rgba(25, 38, 38, 0.4117647059);
+    position: absolute;
+    top: 55px;
+    right: 30px;
+  }
+  header#Hd-intro nav.active #btn-menu .bi-list {
+    display: none;
+  }
+  header#Hd-intro nav.active #btn-menu .bi-x-lg {
     fill: #5d7f8c;
+    display: block;
   }
   header#Hd-intro #container-section {
     justify-content: center;
