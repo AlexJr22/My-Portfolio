@@ -21,7 +21,6 @@ header#Hd-intro {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5019607843);
 }
 header#Hd-intro nav {
   font-family: "Bebas Neue", cursive;
@@ -104,7 +103,6 @@ section#containerSM {
   background-image: linear-gradient(to bottom, #192626, #243b40);
   color: #fff;
   display: flex;
-  height: 100vh;
 }
 section#containerSM aside {
   position: relative;
@@ -113,7 +111,6 @@ section#containerSM aside {
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-width: 470px;
-  height: 100%;
   margin-left: 30px;
   font-family: "Bebas Neue", cursive;
   display: flex;
@@ -132,10 +129,11 @@ section#containerSM aside img#triangulo {
   opacity: 0.9;
 }
 section#containerSM aside img#foto {
-  min-width: 400px;
-  min-height: 400px;
+  width: 400px;
+  height: 400px;
   margin-top: 45px;
   filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.7960784314));
+  transition: 0.5s;
 }
 section#containerSM aside div {
   height: 100%;
@@ -198,6 +196,7 @@ section#containerSM section#SobreMim div p {
     background-color: rgba(118, 130, 133, 0.4666666667);
     border: none;
     border-radius: 0.3rem;
+    cursor: pointer;
   }
   header#Hd-intro nav button#btn-menu:active {
     border: #d8d9d7 solid;
@@ -243,6 +242,58 @@ section#containerSM section#SobreMim div p {
   }
   header#Hd-intro #container-section section#intro {
     width: 80%;
+  }
+  section#containerSM {
+    background-image: url(../assets/imgs/lago_com_montanha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: auto;
+    transition: 1s;
+    flex-direction: column;
+  }
+  section#containerSM aside#my-data {
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    background-image: none;
+    background-color: rgba(25, 38, 38, 0.6352941176);
+    background-attachment: scroll;
+    border-radius: 0;
+    border-bottom: 1px solid #243b40;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding-left: 15%;
+    box-shadow: none;
+  }
+  section#containerSM aside#my-data div {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#containerSM aside#my-data div p:nth-child(1) {
+    font-size: 55px;
+  }
+  section#containerSM aside#my-data div p:nth-child(2),
+section#containerSM aside#my-data div p:nth-child(3) {
+    font-size: 30px;
+  }
+  section#containerSM aside#my-data img#triangulo {
+    display: none;
+  }
+  section#containerSM aside#my-data img#foto {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+  section#containerSM section#SobreMim {
+    background-color: rgba(25, 38, 38, 0.6352941176);
+    padding-left: 100px;
   }
 }
 @media screen and (max-width: 675px) {
@@ -294,5 +345,23 @@ section#containerSM section#SobreMim div p {
     display: grid;
     grid-template-areas: "img img img" "img img img";
     justify-content: space-evenly;
+  }
+  section#containerSM aside#my-data {
+    padding-left: 30px;
+  }
+  section#containerSM aside#my-data img#foto {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+  }
+  section#containerSM div p:nth-child(1) {
+    font-size: 48px;
+  }
+  section#containerSM div p:nth-child(2),
+section#containerSM div p:nth-child(3) {
+    font-size: 22px;
+  }
+  section#containerSM section#SobreMim {
+    padding-left: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
