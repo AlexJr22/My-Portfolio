@@ -1,0 +1,210 @@
+header#Hd-intro {
+  background-image: url(../../assets/imgs/floresta-com-neblina.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+header#Hd-intro nav {
+  font-family: "Bebas Neue", cursive;
+  border: solid 5px #192626;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  min-height: 110px;
+  margin-inline: auto;
+  margin-top: 80px;
+  transition: 0.2s;
+  z-index: 100;
+}
+header#Hd-intro nav:hover {
+  transform: scale(1.1);
+}
+header#Hd-intro nav a {
+  color: #192626;
+  text-decoration: none;
+  font-size: 42px;
+}
+header#Hd-intro nav a:hover {
+  color: #5d7f8c;
+}
+header#Hd-intro nav button#btn-menu {
+  display: none;
+}
+header#Hd-intro nav button#btn-menu .bi-list {
+  fill: #192626;
+}
+header#Hd-intro nav button#btn-menu .bi-x-lg {
+  display: none;
+}
+header#Hd-intro #container-section {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-top: 40px;
+}
+header#Hd-intro section#intro {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #d8d9d7;
+  background-image: linear-gradient(to bottom, rgba(25, 38, 38, 0.4549019608), rgba(0, 0, 0, 0));
+  display: flex;
+  flex-direction: column;
+  height: 435px;
+  min-width: 45%;
+  margin-right: 20px;
+  border-radius: 1rem;
+  padding: 40px;
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
+}
+header#Hd-intro section#intro h1 {
+  transform: translateZ(70px);
+  font-weight: 300;
+  font-size: 100px;
+}
+header#Hd-intro section#intro h2 {
+  transform: translateZ(70px);
+  font-size: 72px;
+  font-weight: 300;
+}
+header#Hd-intro section#intro p {
+  transform: translateZ(70px);
+  font-size: 32px;
+}
+header#Hd-intro section#intro div#containerImgs {
+  transform: translateZ(70px);
+  display: flex;
+  margin-top: 5px;
+  gap: 30px;
+}
+header#Hd-intro section#intro div#containerImgs img {
+  width: 55px;
+  height: 55px;
+}
+
+@media screen and (max-width: 1045px) {
+  header#Hd-intro nav {
+    position: absolute;
+    width: 70px;
+    border: 0;
+    margin: 30px 0px 0px 10px;
+  }
+  header#Hd-intro nav:hover {
+    transform: scale(1);
+  }
+  header#Hd-intro nav a {
+    display: none;
+  }
+  header#Hd-intro nav button#btn-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(118, 130, 133, 0.4666666667);
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  header#Hd-intro nav button#btn-menu:active {
+    border: #d8d9d7 solid;
+  }
+  header#Hd-intro nav button#btn-menu:active .bi-list {
+    fill: #d8d9d7;
+  }
+  header#Hd-intro nav button#btn-menu:active .bi-x-lg {
+    fill: #d8d9d7;
+  }
+  header#Hd-intro nav.active {
+    width: 400px;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    z-index: 10;
+    background-color: #243b40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  header#Hd-intro nav.active a {
+    display: block;
+    width: 75%;
+  }
+  header#Hd-intro nav.active #btn-menu {
+    border-color: #5d7f8c;
+    background-color: rgba(25, 38, 38, 0.4117647059);
+    position: absolute;
+    top: 55px;
+    right: 30px;
+  }
+  header#Hd-intro nav.active #btn-menu .bi-list {
+    display: none;
+  }
+  header#Hd-intro nav.active #btn-menu .bi-x-lg {
+    fill: #5d7f8c;
+    display: block;
+  }
+  header#Hd-intro #container-section {
+    justify-content: center;
+    margin-top: 150px;
+  }
+  header#Hd-intro #container-section section#intro {
+    width: 80%;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 675px) {
+  header#Hd-intro nav {
+    transition: 0.3s;
+    width: 70px;
+    border: 0;
+    border-radius: none;
+  }
+  header#Hd-intro nav.active {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  header#Hd-intro nav a {
+    font-size: 3rem;
+    transition: 0.5s;
+  }
+  header#Hd-intro #container-section section#intro {
+    background-image: none;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    transform: scale(1);
+    transition: 0.5s;
+  }
+  header#Hd-intro #container-section section#intro h1 {
+    font-size: 4rem;
+    text-shadow: 4px 4px 4px black;
+  }
+  header#Hd-intro #container-section section#intro h2 {
+    font-size: 2rem;
+    text-shadow: 4px 4px 4px black;
+  }
+  header#Hd-intro #container-section section#intro p {
+    font-size: 2rem;
+    text-shadow: 4px 4px 4px black;
+  }
+  header#Hd-intro #container-section section#intro #containerImgs {
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    display: grid;
+    grid-template-areas: "img img img" "img img img";
+    justify-content: space-evenly;
+  }
+}/*# sourceMappingURL=header.css.map */
