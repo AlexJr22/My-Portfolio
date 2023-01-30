@@ -15,7 +15,7 @@ section#containerSM {
     position: relative;
 
     background-image: url(../../assets/imgs/lago_com_montanha.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
@@ -211,13 +211,13 @@ section#containerSM {
   }
 }
 
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 460px) {
   section#containerSM {
     aside#my-data {
       display: flex;
-
-      justify-content: center;
       flex-direction: column;
+
+      padding: 0px;
 
       img#foto {
         padding: 0;
@@ -234,27 +234,3 @@ section#containerSM {
     }
   }
 }
-
-// @media screen and (max-width: 375px) {
-//   section#containerSM {
-//     aside#my-data {
-//       display: flex;
-
-//       justify-content: center;
-//       flex-direction: column;
-
-//       img#foto {
-//         padding: 0;
-//         margin: 0;
-//         margin-top: 15px;
-//         width: 170px;
-//         height: 170px;
-//       }
-//       div {
-//         padding: 0;
-//         margin: 0;
-//         width: 100%;
-//       }
-//     }
-//   }
-// }

@@ -6,7 +6,7 @@ section#containerSM {
 section#containerSM aside {
   position: relative;
   background-image: url(../../assets/imgs/lago_com_montanha.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 470px;
@@ -153,11 +153,11 @@ section#containerSM div p:nth-child(3) {
     padding-inline: 35px;
   }
 }
-@media screen and (max-width: 445px) {
+@media screen and (max-width: 460px) {
   section#containerSM aside#my-data {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    padding: 0px;
   }
   section#containerSM aside#my-data img#foto {
     padding: 0;
