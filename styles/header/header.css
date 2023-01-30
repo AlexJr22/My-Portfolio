@@ -51,6 +51,7 @@ header#Hd-intro #container-section {
   margin-top: 40px;
 }
 header#Hd-intro section#intro {
+  cursor: crosshair;
   font-family: "Roboto Slab", serif;
   font-weight: 300;
   color: #d8d9d7;
@@ -88,6 +89,7 @@ header#Hd-intro section#intro div#containerImgs {
 header#Hd-intro section#intro div#containerImgs img {
   width: 55px;
   height: 55px;
+  filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.7058823529));
 }
 
 @media screen and (max-width: 1045px) {

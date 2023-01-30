@@ -14,4 +14,14 @@ html {
   height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
+}
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+  background-color: #192626;
+  width: 5px;
+}
+body::-webkit-scrollbar-thumb,
+html::-webkit-scrollbar-thumb {
+  background-color: #7297a6;
+  border-radius: 0.7rem;
 }/*# sourceMappingURL=style.css.map */

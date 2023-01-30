@@ -74,6 +74,7 @@ header#Hd-intro {
   }
 
   section#intro {
+    cursor: crosshair;
     font-family: $robotoSlab;
     font-weight: 300;
     color: $color5;
@@ -119,6 +120,8 @@ header#Hd-intro {
       img {
         width: 55px;
         height: 55px;
+
+        filter: drop-shadow(4px 4px 5px #000000b4);
       }
     }
   }
