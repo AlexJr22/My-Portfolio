@@ -31,11 +31,11 @@ section#tech {
   }
 
   #containerTech {
-    width: 100%;
+    width: 98%;
     height: 100%;
 
     padding: 45px;
-    margin-bottom: 15px;
+    margin: 15px auto;
 
     display: flex;
     align-items: center;
@@ -43,11 +43,14 @@ section#tech {
     overflow-x: scroll;
     overflow-y: hidden;
 
+    border-radius: 0.6rem;
+
     box-shadow: inset 0px 25px 10px rgba(0, 0, 0, 0.452),
       inset 0px -25px 10px rgba(0, 0, 0, 0.452);
+
     &::-webkit-scrollbar {
       background-color: #192626;
-      height: 7px;
+      height: 10px;
     }
     &::-webkit-scrollbar-thumb {
       background-color: #7297a6;
@@ -96,6 +99,10 @@ section#tech {
         border-radius: 0.7rem;
         margin-top: 60px;
       }
+    }
+
+    .bg-1 {
+      background-image: url(../../assets/imgs/lago_com_montanha.jpg);
     }
   }
 }
