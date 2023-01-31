@@ -83,18 +83,18 @@ section#tech {
 
       box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.7);
 
-      transition: 0.1s;
-      &:hover {
-        transform: scale(1.1);
-      }
+      transform-style: preserve-3d;
+      transform: perspective(1000px);
 
       .name-icon {
+        transform: translateZ(50px);
         font-size: 48px;
         color: $color5;
       }
 
       img.card-img {
-        width: 40%;
+        transform: translateZ(50px);
+        width: 60%;
 
         border-radius: 0.7rem;
         margin-top: 60px;

@@ -54,17 +54,17 @@ section#tech #containerTech .card {
   gap: 20px;
   border-radius: 0.8rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
-  transition: 0.1s;
-}
-section#tech #containerTech .card:hover {
-  transform: scale(1.1);
+  transform-style: preserve-3d;
+  transform: perspective(1000px);
 }
 section#tech #containerTech .card .name-icon {
+  transform: translateZ(50px);
   font-size: 48px;
   color: #d8d9d7;
 }
 section#tech #containerTech .card img.card-img {
-  width: 40%;
+  transform: translateZ(50px);
+  width: 60%;
   border-radius: 0.7rem;
   margin-top: 60px;
 }
