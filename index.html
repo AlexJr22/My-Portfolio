@@ -18,7 +18,7 @@
     <header id="Hd-intro">
       <nav id="navegation" class="">
         <a href="#SobreMim">Sobre mim</a>
-        <a href="#">Tecnologias</a>
+        <a href="#tech">Tecnologias</a>
         <a href="#">Projetos</a>
         <a href="#">Contato</a>
 
@@ -124,14 +124,42 @@
       </section>
     </section>
 
+    <section id="tech">
+      <h1>Tecnologias</h1>
+
+      <div id="containerTech">
+        <div class="card">
+          <img class="card-img" src="assets/icons/JS.png" alt="javascript" />
+
+          <span class="name-icon">JavaScript</span>
+        </div>
+
+        <div class="card">
+          <img
+            class="card-img"
+            src="assets/icons/html5-logo-10.png"
+            alt="HTML5"
+          />
+
+          <span class="name-icon">HTML5</span>
+        </div>
+
+        <div class="card">
+          <img class="card-img" src="assets/icons/css.png" alt="CSS3" />
+
+          <span class="name-icon">CSS3</span>
+        </div>
+      </div>
+    </section>
+
     <script src="scripts/script.js"></script>
     <script src="scripts/vanilla-tilt.js"></script>
     <script type="text/javascript">
       VanillaTilt.init(document.querySelectorAll(".tiltEffect"), {
-        max: 50,
+        max: 15,
         speed: 100,
         glare: true,
-        "max-glare": 0.2,
+        "max-glare": 0.5,
       });
       VanillaTilt.init(document.querySelector(".tiltEffectImg"), {
         max: 20,
