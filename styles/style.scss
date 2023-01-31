@@ -28,10 +28,20 @@ html {
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
     background-color: #192626;
-    width: 7px;
+    width: 3px;
   }
   &::-webkit-scrollbar-thumb {
     background-color: #7297a6;
     border-radius: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  html,
+  body {
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      width: 1px;
+    }
   }
 }

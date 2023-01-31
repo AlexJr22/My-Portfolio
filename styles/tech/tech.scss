@@ -9,7 +9,7 @@ $robotoSlab: "Roboto Slab", serif;
 section#tech {
   width: 100%;
   height: 100vh;
-  background-color: $color2;
+  background-color: $color1;
 
   font-family: $bebasNune;
 
@@ -17,33 +17,36 @@ section#tech {
   flex-direction: column;
 
   h1 {
-    background-color: $color1;
     color: $color5;
     font-size: 72px;
     text-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
 
-    height: 200px;
+    height: 150px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 
-    box-shadow: 3px 25px 20px rgba(0, 0, 0, 0.452);
     z-index: 3;
   }
 
   #containerTech {
     width: 100%;
+    height: 100%;
 
     padding: 45px;
+    margin-bottom: 15px;
 
     display: flex;
+    align-items: center;
 
     overflow-x: scroll;
     overflow-y: hidden;
 
+    box-shadow: inset 0px 25px 10px rgba(0, 0, 0, 0.452),
+      inset 0px -25px 10px rgba(0, 0, 0, 0.452);
     &::-webkit-scrollbar {
-      background-color: #243b40;
+      background-color: #192626;
       height: 7px;
     }
     &::-webkit-scrollbar-thumb {
@@ -52,18 +55,18 @@ section#tech {
     }
 
     .card {
-      background-image: url(../../assets/imgs/floresta-com-neblina.jpg);
+      // background-image: url(../../assets/imgs/floresta-com-neblina.jpg);
       background-size: cover;
       background-position: bottom center;
 
       border: solid 1px;
-      border-top-color: white;
-      border-left-color: white;
+      border-top-color: rgb(201, 201, 201);
+      border-left-color: rgb(201, 201, 201);
       border-right-color: #353535;
       border-bottom-color: #353535;
 
-      width: min(250px);
-      height: min(350px);
+      min-width: 250px;
+      min-height: 350px;
 
       display: flex;
       flex-direction: column;
