@@ -128,7 +128,7 @@
       <h1>Tecnologias</h1>
 
       <div id="containerTech">
-        <div class="card bg-1 tiltEffect">
+        <div class="card bg-1 tiltEffectCard">
           <img class="card-img" src="assets/icons/JS.png" alt="javascript" />
 
           <span class="name-icon">JavaScript</span>
@@ -145,9 +145,17 @@
         glare: true,
         "max-glare": 0.5,
       });
+
       VanillaTilt.init(document.querySelector(".tiltEffectImg"), {
         max: 20,
         speed: 100,
+      });
+
+      VanillaTilt.init(document.querySelectorAll(".tiltEffectCard"), {
+        max: 2,
+        speed: 100,
+        glare: true,
+        "max-glare": 0.2,
       });
     </script>
   </body>
