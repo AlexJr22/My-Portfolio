@@ -1,0 +1,38 @@
+[
+  {
+    "tech": "JavaScript",
+    "icon": "JS.png"
+  },
+  {
+    "tech": "HTML5",
+    "icon": "html5-logo-10.png"
+  },
+  {
+    "tech": "CSS",
+    "icon": "css.png"
+  },
+  {
+    "tech": "NodeJS",
+    "icon": "NodeJs.svg"
+  },
+  {
+    "tech": "Git",
+    "icon": "git.png"
+  },
+  {
+    "tech": "GitHub",
+    "icon": "placa-do-github.png"
+  },
+  {
+    "tech": "GitBash",
+    "icon": "git-bash-logo-B6475E8359-seeklogo.com.png"
+  },
+  {
+    "tech": "Python",
+    "icon": "python.png"
+  },
+  {
+    "tech": "MySLQ",
+    "icon": "MySQL.png"
+  }
+]
