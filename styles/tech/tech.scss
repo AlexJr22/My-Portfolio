@@ -8,14 +8,13 @@ $robotoSlab: "Roboto Slab", serif;
 
 section#tech {
   width: 100%;
-  background-color: $color1;
 
   font-family: $bebasNune;
 
   display: flex;
   flex-direction: column;
 
-  h1 {
+  h2 {
     color: $color5;
     font-size: 55px;
     text-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
@@ -42,7 +41,6 @@ section#tech {
 
     display: flex;
     align-items: center;
-    justify-content: center;
 
     flex-wrap: wrap;
 

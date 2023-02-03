@@ -17,9 +17,9 @@ fetch("./techs.json")
     techs.forEach(({ icon, tech }) => {
       containerTech.innerHTML += `
         <div class="card">
-          <img class="card-img" src="assets/icons/${icon}" alt="${tech}" />
+        <img class="card-img" src="assets/icons/${icon}" alt="${tech}" />
 
-          <span class="name-icon">${tech}</span>
+        <span class="name-icon">${tech}</span>
         </div>
       `;
     })

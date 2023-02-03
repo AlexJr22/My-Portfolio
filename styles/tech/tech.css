@@ -1,11 +1,10 @@
 section#tech {
   width: 100%;
-  background-color: #192626;
   font-family: "Bebas Neue", cursive;
   display: flex;
   flex-direction: column;
 }
-section#tech h1 {
+section#tech h2 {
   color: #d8d9d7;
   font-size: 55px;
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -23,7 +22,6 @@ section#tech #containerTech {
   margin: 15px auto;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
   border-radius: 1rem;
   box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.4);
