@@ -1,16 +1,16 @@
 alert("Portfolio em desenvolvimento!!");
 
-const btnMenu = document.getElementById("btn-menu"); // botão do menu
-const navegation = document.getElementById("navegation"); // elemento guarda os link âncoras
+// adicionado um evento de click no 'btnMenu' para ocultar/mostrar o menu de navegação
+const btnMenu = document.getElementById("btn-menu");
+const navegation = document.getElementById("navegation");
 
-const containerTech = document.getElementById("containerTech"); // container que guarda os icones
-
-// adicionado um evento de click no btnMenu
 btnMenu.addEventListener("click", () => {
   navegation.classList.toggle("active");
 });
 
-// gerando de forma dinâmica os icones
+// gerando de forma dinâmica os icones das tecnologias
+const containerTech = document.getElementById("containerTech");
+
 fetch("./techs.json")
   .then((response) => response.json())
   .then((techs) =>
