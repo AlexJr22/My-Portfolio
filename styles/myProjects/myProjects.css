@@ -1,5 +1,6 @@
 section#MyProjects {
   font-family: "Bebas Neue", cursive;
+  background-color: #243b40;
 }
 section#MyProjects h2 {
   color: #d8d9d7;
@@ -9,26 +10,60 @@ section#MyProjects h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 55px;
+  padding-top: 55px;
+  margin-bottom: 20px;
 }
 section#MyProjects #projects {
-  background-color: #161616;
-  width: min(1200px, 90%);
+  width: 95%;
   height: 400px;
   display: flex;
   align-items: center;
   border-radius: 0.7rem;
-  padding: 1em;
   margin-inline: auto;
 }
 section#MyProjects #projects .cardProject {
-  border: gray solid 1px;
-  width: 250px;
+  background-color: rgb(27, 27, 34);
+  box-sizing: content-box;
+  width: 350px;
   height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 5px;
 }
 section#MyProjects #projects .cardProject .projectTitle {
   color: white;
+  font-size: 2em;
+  text-align: center;
 }
 section#MyProjects #projects .cardProject .imgProject {
+  background-image: url(../../assets/imgs/img_projects/calculator.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 90%;
+  height: 200px;
+  border-radius: 1rem;
+}
+section#MyProjects #projects .cardProject .containerBtns {
   width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+}
+section#MyProjects #projects .cardProject .containerBtns button {
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  color: white;
+  width: 45%;
+  height: 100%;
+  border-radius: 1rem;
+  border: none;
+}
+section#MyProjects #projects .cardProject .containerBtns .btn-1 {
+  background-color: #7a3b3b;
+}
+section#MyProjects #projects .cardProject .containerBtns .btn-2 {
+  background-color: rgb(70, 70, 104);
 }/*# sourceMappingURL=myProjects.css.map */

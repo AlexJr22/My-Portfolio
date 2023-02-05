@@ -1,5 +1,6 @@
 section#tech {
   width: 100%;
+  background-image: linear-gradient(to bottom, transparent, #243b40);
   font-family: "Bebas Neue", cursive;
   display: flex;
   flex-direction: column;
