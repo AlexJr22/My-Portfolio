@@ -48,8 +48,16 @@ section#MyProjects {
       justify-content: space-around;
       flex-direction: column;
 
+      margin-bottom: 15px;
+
       border-radius: 1rem;
       padding: 5px;
+
+      transition: 0.3s;
+
+      &:hover {
+        transform: scale(1.08);
+      }
 
       .projectTitle {
         color: white;

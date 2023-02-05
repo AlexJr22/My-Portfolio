@@ -30,8 +30,13 @@ section#MyProjects #projects .cardProject {
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  margin-bottom: 15px;
   border-radius: 1rem;
   padding: 5px;
+  transition: 0.3s;
+}
+section#MyProjects #projects .cardProject:hover {
+  transform: scale(1.08);
 }
 section#MyProjects #projects .cardProject .projectTitle {
   color: white;

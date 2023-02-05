@@ -18,7 +18,6 @@ section#tech h2 {
   z-index: 3;
 }
 section#tech #containerTech {
-  background-color: #161616;
   width: 95%;
   margin: 15px auto;
   display: flex;
@@ -26,7 +25,6 @@ section#tech #containerTech {
   justify-content: center;
   flex-wrap: wrap;
   border-radius: 1rem;
-  box-shadow: 0.3rem 0.3rem 1rem rgba(0, 0, 0, 0.4);
 }
 section#tech #containerTech .card {
   background-image: url(../../assets/imgs/sky-cicle.jpg);
