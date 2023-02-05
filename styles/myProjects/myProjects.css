@@ -1,0 +1,34 @@
+section#MyProjects {
+  font-family: "Bebas Neue", cursive;
+}
+section#MyProjects h2 {
+  color: #d8d9d7;
+  font-size: 55px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55px;
+}
+section#MyProjects #projects {
+  background-color: #161616;
+  width: min(1200px, 90%);
+  height: 400px;
+  display: flex;
+  align-items: center;
+  border-radius: 0.7rem;
+  padding: 1em;
+  margin-inline: auto;
+}
+section#MyProjects #projects .cardProject {
+  border: gray solid 1px;
+  width: 250px;
+  height: 350px;
+}
+section#MyProjects #projects .cardProject .projectTitle {
+  color: white;
+}
+section#MyProjects #projects .cardProject .imgProject {
+  width: 100%;
+}/*# sourceMappingURL=myProjects.css.map */

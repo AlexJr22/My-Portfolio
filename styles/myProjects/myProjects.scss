@@ -1,0 +1,53 @@
+$color1: #192626;
+$color2: #243b40;
+$color3: #5d7f8c;
+$color4: #7297a6;
+$color5: #d8d9d7;
+$bebasNune: "Bebas Neue", cursive;
+$robotoSlab: "Roboto Slab", serif;
+
+section#MyProjects {
+  font-family: $bebasNune;
+
+  h2 {
+    color: $color5;
+    font-size: 55px;
+    text-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
+
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 55px;
+  }
+
+  #projects {
+    background-color: rgba($color: rgb(22, 22, 22), $alpha: 1);
+    width: min(1200px, 90%);
+    height: 400px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 0.7rem;
+
+    padding: 1em;
+    margin-inline: auto;
+
+    .cardProject {
+      border: gray solid 1px;
+      width: 250px;
+      height: 350px;
+
+      .projectTitle {
+        color: white;
+      }
+
+      .imgProject {
+        width: 100%;
+      }
+    }
+  }
+}
