@@ -4,5 +4,23 @@
         "img": "./assets/imgs/img_projects/calculator.jpg",
         "github": "https://github.com/alexjr22/calculator",
         "page": "https://alexjr22.github.io/calculator/"
+    },
+    {
+        "name": "Cordel Moderno",
+        "img": "./assets/imgs/img_projects/Cordel-Moderno.png",
+        "github": "https://github.com/alexjr22/Cordel-Moderno",
+        "page": "https://alexjr22.github.io/Cordel-Moderno/"
+    },
+    {
+        "name": "Countdown Timer",
+        "img": "./assets/imgs/img_projects/countdown-timer2.png",
+        "github": "https://github.com/alexjr22/countdown-timer",
+        "page": "https://alexjr22.github.io/Countdown-Timer/"
+    },
+    {
+        "name": "CauseEffect",
+        "img": "./assets/imgs/img_projects/CauseEffect.png",
+        "github": "https://github.com/alexjr22/CauseEffect",
+        "page": "https://alexjr22.github.io/CauseEffect/"
     }
 ]
