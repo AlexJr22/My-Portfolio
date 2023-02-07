@@ -35,6 +35,7 @@ section#MyProjects {
     border-radius: 0.7rem;
 
     margin-inline: auto;
+    padding-bottom: 15px;
 
     .cardProject {
       background-color: rgb(27, 27, 34);
@@ -43,12 +44,12 @@ section#MyProjects {
       width: 350px;
       height: 350px;
 
+      margin: 10px;
+
       display: flex;
       align-items: center;
       justify-content: space-around;
       flex-direction: column;
-
-      margin-bottom: 15px;
 
       border-radius: 1rem;
       padding: 5px;
@@ -58,7 +59,7 @@ section#MyProjects {
       box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.4);
 
       &:hover {
-        transform: scale(1.08);
+        transform: scale(1.05);
       }
 
       .projectTitle {
@@ -68,7 +69,6 @@ section#MyProjects {
       }
 
       .imgProject {
-        background-image: url(../../assets/imgs/img_projects/calculator.jpg);
         background-position: center;
         background-size: cover;
 

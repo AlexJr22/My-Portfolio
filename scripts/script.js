@@ -22,3 +22,40 @@ fetch("./techs.json")
       `;
     })
   );
+
+// Gerando de forma dinâmica os cards dos projetos
+
+const containerProjects = document.getElementById("projects");
+
+fetch("./projects.json")
+  .then((response) => response.json())
+  .then((projects) =>
+    projects.forEach(({ name, img, github, page }) => {
+      containerProjects.innerHTML += `
+      <div class="cardProject">
+        <h3 class="projectTitle">${name}</h3>
+
+        <div
+          style="
+            background-image: url(${img});
+          "
+          class="imgProject"
+        ></div>
+
+        <div class="containerBtns">
+          <a href="${page}" class="btn-1">
+            Veja Mais
+          </a>
+
+          <a
+            href="${github}"
+            target="_blank"
+            class="btn-2"
+          >
+            GitHub
+          </a>
+        </div>
+      </div>
+    `;
+    })
+  );
