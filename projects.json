@@ -3,6 +3,6 @@
         "name": "Calculator",
         "img": "./assets/imgs/img_projects/calculator.jpg",
         "github": "https://github.com/alexjr22/calculator",
-        "page": "pages/projects_pages/calculator.html"
+        "page": "https://alexjr22.github.io/calculator/"
     }
 ]

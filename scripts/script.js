@@ -43,7 +43,10 @@ fetch("./projects.json")
         ></div>
 
         <div class="containerBtns">
-          <a href="${page}" class="btn-1">
+          <a href="${page}"
+            target="_blank"
+            class="btn-1"
+          >
             Veja Mais
           </a>
 
