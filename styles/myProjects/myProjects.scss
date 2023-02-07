@@ -104,10 +104,17 @@ section#MyProjects {
 
         .btn-1 {
           background-color: #7a3b3b;
+
+          &:hover {
+            background-color: #7e4747;
+          }
         }
 
         .btn-2 {
           background-color: rgb(70, 70, 104);
+          &:hover {
+            background-color: rgb(77, 77, 99);
+          }
         }
       }
     }

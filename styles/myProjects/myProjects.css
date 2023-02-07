@@ -74,6 +74,12 @@ section#MyProjects #projects .cardProject .containerBtns a {
 section#MyProjects #projects .cardProject .containerBtns .btn-1 {
   background-color: #7a3b3b;
 }
+section#MyProjects #projects .cardProject .containerBtns .btn-1:hover {
+  background-color: #7e4747;
+}
 section#MyProjects #projects .cardProject .containerBtns .btn-2 {
   background-color: rgb(70, 70, 104);
+}
+section#MyProjects #projects .cardProject .containerBtns .btn-2:hover {
+  background-color: rgb(77, 77, 99);
 }/*# sourceMappingURL=myProjects.css.map */
