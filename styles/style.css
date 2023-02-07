@@ -31,7 +31,7 @@ html::-webkit-scrollbar-thumb {
 
 @media screen and (max-width: 675px) {
   html::-webkit-scrollbar,
-body::-webkit-scrollbar {
+  body::-webkit-scrollbar {
     background-color: transparent;
     width: 1px;
   }
