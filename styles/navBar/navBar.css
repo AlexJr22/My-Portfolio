@@ -62,6 +62,7 @@ nav#navegation.active {
 nav#navegation.active a {
   display: block;
   width: 75%;
+  transition: 0.5s;
 }
 nav#navegation.active #btn-menu {
   top: 55px;
@@ -92,6 +93,5 @@ nav#navegation.active #btn-menu .bi-x-lg {
   }
   nav#navegation a {
     font-size: 3rem;
-    transition: 0.5s;
   }
 }/*# sourceMappingURL=navBar.css.map */

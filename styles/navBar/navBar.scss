@@ -90,6 +90,8 @@ nav#navegation {
         a {
             display: block;
             width: 75%;
+
+            transition: 0.5s;
         }
 
         #btn-menu {
@@ -127,7 +129,6 @@ nav#navegation {
 
         a {
             font-size: 3rem;
-            transition: 0.5s;
         }
     }
 }
