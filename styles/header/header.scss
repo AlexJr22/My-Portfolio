@@ -20,7 +20,7 @@ header#Hd-intro {
     #container-section {
         // border: yellow solid 1px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: flex-start;
 
         width: 100%;
         height: max-content;
@@ -41,7 +41,7 @@ header#Hd-intro {
 
         height: 435px;
         min-width: 45%;
-        margin-right: 20px;
+        margin-left: 50px;
 
         border-radius: 1rem;
 
@@ -53,17 +53,23 @@ header#Hd-intro {
             transform: translateZ(70px);
             font-weight: 300;
             font-size: 100px;
+
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.473);
         }
 
         h2 {
             transform: translateZ(70px);
             font-size: 72px;
             font-weight: 300;
+
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.473);
         }
 
         p {
             transform: translateZ(70px);
             font-size: 32px;
+
+            text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.473);
         }
 
         div#containerImgs {
@@ -101,26 +107,18 @@ header#Hd-intro {
     header#Hd-intro {
         #container-section {
             section#intro {
-                background-image: none;
-                border-radius: 0;
-
-                width: 100%;
+                width: 80%;
                 height: 100%;
                 margin: 0px;
-                transform: scale(1);
-                transition: 0.5s;
 
                 h1 {
                     font-size: 4rem;
-                    text-shadow: 4px 4px 4px black;
                 }
                 h2 {
                     font-size: 2rem;
-                    text-shadow: 4px 4px 4px black;
                 }
                 p {
                     font-size: 2rem;
-                    text-shadow: 4px 4px 4px black;
                 }
 
                 #containerImgs {
