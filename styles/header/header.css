@@ -9,7 +9,7 @@ header#Hd-intro {
 }
 header#Hd-intro #container-section {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   width: 100%;
   height: -moz-max-content;
   height: max-content;
@@ -24,8 +24,7 @@ header#Hd-intro section#intro {
   display: flex;
   flex-direction: column;
   height: 435px;
-  min-width: 45%;
-  margin-left: 50px;
+  width: 60%;
   border-radius: 1rem;
   padding: 40px;
   transform-style: preserve-3d;
@@ -66,8 +65,7 @@ header#Hd-intro section#intro div#containerImgs img {
     margin-top: 150px;
   }
   header#Hd-intro #container-section section#intro {
-    width: 80%;
-    margin-right: 0;
+    width: 70%;
   }
 }
 @media screen and (max-width: 675px) {
