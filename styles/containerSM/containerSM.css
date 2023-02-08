@@ -31,7 +31,6 @@ section#containerSM aside img#foto {
   height: 400px;
   margin-top: 45px;
   filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.7960784314));
-  transition: 0.5s;
 }
 section#containerSM aside div {
   height: 100%;
