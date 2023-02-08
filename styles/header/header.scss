@@ -104,19 +104,20 @@ header#Hd-intro {
 @media screen and (max-width: 675px) {
     header#Hd-intro {
         #container-section {
+            padding: 5px;
             section#intro {
                 width: 80%;
                 height: 100%;
                 margin: 0px;
 
                 h1 {
-                    font-size: 4rem;
+                    font-size: 3rem;
                 }
                 h2 {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
                 p {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                 }
 
                 #containerImgs {

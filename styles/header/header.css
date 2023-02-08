@@ -69,19 +69,22 @@ header#Hd-intro section#intro div#containerImgs img {
   }
 }
 @media screen and (max-width: 675px) {
+  header#Hd-intro #container-section {
+    padding: 5px;
+  }
   header#Hd-intro #container-section section#intro {
     width: 80%;
     height: 100%;
     margin: 0px;
   }
   header#Hd-intro #container-section section#intro h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   header#Hd-intro #container-section section#intro h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   header#Hd-intro #container-section section#intro p {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   header#Hd-intro #container-section section#intro #containerImgs {
     width: 100%;
