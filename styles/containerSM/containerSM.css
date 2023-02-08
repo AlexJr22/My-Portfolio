@@ -42,7 +42,6 @@ section#containerSM aside div {
   align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 section#containerSM aside p:nth-child(1) {
@@ -113,7 +112,7 @@ section#containerSM section#SobreMim div p {
     font-size: 55px;
   }
   section#containerSM aside#my-data div p:nth-child(2),
-section#containerSM aside#my-data div p:nth-child(3) {
+  section#containerSM aside#my-data div p:nth-child(3) {
     font-size: 30px;
   }
   section#containerSM aside#my-data img#triangulo {
@@ -144,7 +143,7 @@ section#containerSM aside#my-data div p:nth-child(3) {
     font-size: 48px;
   }
   section#containerSM div p:nth-child(2),
-section#containerSM div p:nth-child(3) {
+  section#containerSM div p:nth-child(3) {
     font-size: 22px;
   }
   section#containerSM section#SobreMim {

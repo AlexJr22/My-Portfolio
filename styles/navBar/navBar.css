@@ -1,0 +1,117 @@
+nav#navegation {
+  position: absolute;
+  font-family: "Bebas Neue", cursive;
+  border: solid 5px #192626;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  min-height: 110px;
+  margin-inline: auto;
+  margin-top: 80px;
+  transition: 0.2s;
+  z-index: 100;
+}
+nav#navegation:hover {
+  transform: scale(1.1);
+}
+nav#navegation a {
+  color: #192626;
+  text-decoration: none;
+  font-size: 42px;
+}
+nav#navegation a:hover {
+  color: #5d7f8c;
+}
+nav#navegation button#btn-menu {
+  display: none;
+}
+nav#navegation button#btn-menu .bi-list {
+  fill: #192626;
+}
+nav#navegation button#btn-menu .bi-x-lg {
+  display: none;
+}
+
+@media screen and (max-width: 1045px) {
+  nav#navegation {
+    position: absolute;
+    width: 70px;
+    border: 0;
+    margin: 30px 0px 0px 10px;
+  }
+  nav#navegation:hover {
+    transform: scale(1);
+  }
+  nav#navegation a {
+    display: none;
+  }
+  nav#navegation button#btn-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(118, 130, 133, 0.4666666667);
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+  }
+  nav#navegation button#btn-menu:active {
+    border: #d8d9d7 solid;
+  }
+  nav#navegation button#btn-menu:active .bi-list {
+    fill: #d8d9d7;
+  }
+  nav#navegation button#btn-menu:active .bi-x-lg {
+    fill: #d8d9d7;
+  }
+  nav#navegation.active {
+    width: 400px;
+    height: 100%;
+    margin: 0;
+    border-radius: 0;
+    z-index: 10;
+    background-color: #243b40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  nav#navegation.active a {
+    display: block;
+    width: 75%;
+  }
+  nav#navegation.active #btn-menu {
+    border-color: #5d7f8c;
+    background-color: rgba(25, 38, 38, 0.4117647059);
+    position: absolute;
+    top: 55px;
+    right: 30px;
+  }
+  nav#navegation.active #btn-menu .bi-list {
+    display: none;
+  }
+  nav#navegation.active #btn-menu .bi-x-lg {
+    fill: #5d7f8c;
+    display: block;
+  }
+}
+@media screen and (max-width: 675px) {
+  nav#navegation {
+    transition: 0.3s;
+    width: 70px;
+    border: 0;
+    border-radius: none;
+  }
+  nav#navegation.active {
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  nav#navegation a {
+    font-size: 3rem;
+    transition: 0.5s;
+  }
+}/*# sourceMappingURL=navBar.css.map */

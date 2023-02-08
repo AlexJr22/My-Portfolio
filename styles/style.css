@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Slab:wght@300;400&display=swap");
 @import url(header/header.css);
+@import url(navBar/navBar.css);
 @import url(containerSM/containerSM.css);
 @import url(tech/tech.css);
 @import url(myProjects/myProjects.css);
