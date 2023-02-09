@@ -1,5 +1,5 @@
 nav#navegation {
-  position: absolute;
+  position: fixed;
   height: -moz-min-content;
   height: min-content;
   width: 0px;
@@ -19,13 +19,13 @@ nav#navegation a:hover {
 nav#navegation button#btn-menu {
   position: absolute;
   top: 55px;
-  left: 10px;
+  left: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 60px;
   height: 60px;
-  background-color: rgba(118, 130, 133, 0.4666666667);
+  background-color: rgba(114, 151, 166, 0.7);
   border: none;
   border-radius: 0.3rem;
   transition: 0.2s;
