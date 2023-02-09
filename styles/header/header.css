@@ -21,6 +21,7 @@ header#headerMain section#my-data div#containerImgs {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 30px;
   border-radius: 2rem;
   background-color: rgba(0, 0, 0, 0.1725490196);
   -webkit-backdrop-filter: blur(15px);
@@ -29,7 +30,7 @@ header#headerMain section#my-data div#containerImgs {
 }
 header#headerMain section#my-data div#containerInfo {
   color: white;
-  width: 60%;
+  width: 50%;
   height: 470px;
   display: flex;
   justify-content: center;
@@ -64,4 +65,88 @@ header#headerMain section#my-data p:nth-child(3) {
   font-size: 36px;
   margin-bottom: -5px;
   filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.7960784314));
+}
+
+@media screen and (max-width: 1045px) {
+  header#headerMain section#my-data {
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    background-image: none;
+    background-attachment: scroll;
+    border-radius: 0;
+    border-bottom: 1px solid #243b40;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    box-shadow: none;
+  }
+  header#headerMain section#my-data div#containerImgs {
+    background-color: transparent;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    box-shadow: none;
+    margin: 0px;
+  }
+  header#headerMain section#my-data div#containerInfo {
+    background-image: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+    box-shadow: none;
+  }
+  header#headerMain section#my-data div#containerInfo p:nth-child(1) {
+    font-size: 55px;
+  }
+  header#headerMain section#my-data div#containerInfo p:nth-child(2),
+  header#headerMain section#my-data div#containerInfo p:nth-child(3) {
+    font-size: 30px;
+  }
+  header#headerMain section#my-data img#foto {
+    width: 300px;
+    height: 300px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 675px) {
+  header#headerMain section#my-data {
+    flex-direction: column;
+  }
+  header#headerMain section#my-data img#foto {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+  }
+  header#headerMain section#my-data div#containerInfo p:nth-child(1) {
+    font-size: 45px;
+  }
+  header#headerMain section#my-data div#containerInfo p:nth-child(2),
+  header#headerMain section#my-data div#containerInfo p:nth-child(3) {
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 460px) {
+  header#headerMain section#my-data {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+  header#headerMain section#my-data img#foto {
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    width: 170px;
+    height: 170px;
+  }
+  header#headerMain section#my-data div {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
 }/*# sourceMappingURL=header.css.map */

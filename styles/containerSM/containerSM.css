@@ -5,10 +5,12 @@ section#containerSM {
 }
 section#containerSM section#SobreMim {
   font-family: "Roboto Slab", serif;
-  padding: 40px;
+  text-align: justify;
   display: flex;
   flex-direction: column;
   width: 60%;
+  margin-inline: auto;
+  padding: 100px 0px;
 }
 section#containerSM section#SobreMim h2 {
   color: #d8d9d7;
@@ -32,50 +34,11 @@ section#containerSM section#SobreMim div p {
     transition: 1s;
     flex-direction: column;
   }
-  section#containerSM aside#my-data {
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
-    background-image: none;
-    background-color: rgba(25, 38, 38, 0.6352941176);
-    background-attachment: scroll;
-    border-radius: 0;
-    border-bottom: 1px solid #243b40;
-    width: 100%;
-    height: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding-left: 15%;
-    box-shadow: none;
-  }
-  section#containerSM aside#my-data div {
-    background-image: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  section#containerSM aside#my-data div p:nth-child(1) {
-    font-size: 55px;
-  }
-  section#containerSM aside#my-data div p:nth-child(2),
-  section#containerSM aside#my-data div p:nth-child(3) {
-    font-size: 30px;
-  }
-  section#containerSM aside#my-data img#triangulo {
-    display: none;
-  }
-  section#containerSM aside#my-data img#foto {
-    width: 300px;
-    height: 300px;
-    margin: 0;
-  }
   section#containerSM section#SobreMim {
     text-align: justify;
     width: auto;
     background-color: rgba(25, 38, 38, 0.6352941176);
-    padding-inline: 100px;
+    padding: 100px;
   }
 }
 @media screen and (max-width: 675px) {
@@ -95,26 +58,6 @@ section#containerSM section#SobreMim div p {
     font-size: 22px;
   }
   section#containerSM section#SobreMim {
-    text-align: start;
     padding-inline: 35px;
-  }
-}
-@media screen and (max-width: 460px) {
-  section#containerSM aside#my-data {
-    display: flex;
-    flex-direction: column;
-    padding: 0px;
-  }
-  section#containerSM aside#my-data img#foto {
-    padding: 0;
-    margin: 0;
-    margin-top: 15px;
-    width: 170px;
-    height: 170px;
-  }
-  section#containerSM aside#my-data div {
-    padding: 0;
-    margin: 0;
-    width: 100%;
   }
 }/*# sourceMappingURL=containerSM.css.map */

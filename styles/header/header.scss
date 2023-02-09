@@ -15,8 +15,6 @@ div#containerHeader {
 
 header#headerMain {
     section#my-data {
-        // border: white 1px solid;
-
         position: relative;
 
         width: 100%;
@@ -38,6 +36,8 @@ header#headerMain {
             justify-content: center;
             align-items: center;
 
+            margin-right: 30px;
+
             border-radius: 2rem;
 
             background-color: #0000002c;
@@ -49,7 +49,7 @@ header#headerMain {
         div#containerInfo {
             color: white;
 
-            width: 60%;
+            width: 50%;
             height: 470px;
 
             display: flex;
@@ -90,6 +90,117 @@ header#headerMain {
             font-size: 36px;
             margin-bottom: -5px;
             filter: drop-shadow(7px 7px 3px #000000cb);
+        }
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    header#headerMain {
+        section#my-data {
+            backdrop-filter: blur(10px);
+            background-image: none;
+            // background-color: #192626a2;
+            background-attachment: scroll;
+
+            border-radius: 0;
+            border-bottom: 1px solid $color2;
+
+            width: 100%;
+            height: 350px;
+
+            display: flex;
+
+            flex-direction: row;
+
+            justify-content: center;
+            align-items: center;
+
+            margin: 0;
+
+            box-shadow: none;
+
+            div#containerImgs {
+                background-color: transparent;
+                backdrop-filter: none;
+                box-shadow: none;
+                margin: 0px;
+            }
+
+            div#containerInfo {
+                background-image: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                background-color: transparent;
+                backdrop-filter: none;
+                box-shadow: none;
+
+                p:nth-child(1) {
+                    font-size: 55px;
+                }
+
+                p:nth-child(2),
+                p:nth-child(3) {
+                    font-size: 30px;
+                }
+            }
+
+            img#foto {
+                width: 300px;
+                height: 300px;
+
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 675px) {
+    header#headerMain {
+        section#my-data {
+            flex-direction: column;
+
+            img#foto {
+                width: 200px;
+                height: 200px;
+                margin-top: 10px;
+            }
+
+            div#containerInfo {
+                p:nth-child(1) {
+                    font-size: 45px;
+                }
+
+                p:nth-child(2),
+                p:nth-child(3) {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    header#headerMain {
+        section#my-data {
+            display: flex;
+            flex-direction: column;
+
+            padding: 0px;
+
+            img#foto {
+                padding: 0;
+                margin: 0;
+                margin-top: 15px;
+                width: 170px;
+                height: 170px;
+            }
+            div {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
         }
     }
 }

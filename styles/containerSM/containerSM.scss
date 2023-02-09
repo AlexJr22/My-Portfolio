@@ -12,10 +12,16 @@ section#containerSM {
     background-color: #192626a2;
     section#SobreMim {
         font-family: $robotoSlab;
-        padding: 40px;
+
+        text-align: justify;
+
         display: flex;
         flex-direction: column;
         width: 60%;
+
+        margin-inline: auto;
+
+        padding: 100px 0px;
 
         h2 {
             color: $color5;
@@ -45,63 +51,11 @@ section#containerSM {
 
         flex-direction: column;
 
-        aside#my-data {
-            backdrop-filter: blur(10px);
-            background-image: none;
-            background-color: #192626a2;
-            background-attachment: scroll;
-
-            border-radius: 0;
-            border-bottom: 1px solid $color2;
-
-            width: 100%;
-            height: 350px;
-
-            display: flex;
-
-            flex-direction: row;
-
-            justify-content: center;
-            align-items: center;
-
-            margin: 0;
-            padding-left: 15%;
-
-            box-shadow: none;
-
-            div {
-                background-image: none;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                p:nth-child(1) {
-                    font-size: 55px;
-                }
-
-                p:nth-child(2),
-                p:nth-child(3) {
-                    font-size: 30px;
-                }
-            }
-
-            img#triangulo {
-                display: none;
-            }
-
-            img#foto {
-                width: 300px;
-                height: 300px;
-
-                margin: 0;
-            }
-        }
-
         section#SobreMim {
             text-align: justify;
             width: auto;
             background-color: #192626a2;
-            padding-inline: 100px;
+            padding: 100px;
         }
     }
 }
@@ -130,32 +84,7 @@ section#containerSM {
         }
 
         section#SobreMim {
-            text-align: start;
             padding-inline: 35px;
-        }
-    }
-}
-
-@media screen and (max-width: 460px) {
-    section#containerSM {
-        aside#my-data {
-            display: flex;
-            flex-direction: column;
-
-            padding: 0px;
-
-            img#foto {
-                padding: 0;
-                margin: 0;
-                margin-top: 15px;
-                width: 170px;
-                height: 170px;
-            }
-            div {
-                padding: 0;
-                margin: 0;
-                width: 100%;
-            }
         }
     }
 }
