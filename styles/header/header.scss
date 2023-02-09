@@ -1,0 +1,95 @@
+$color1: #192626;
+$color2: #243b40;
+$color3: #5d7f8c;
+$color4: #7297a6;
+$color5: #d8d9d7;
+$bebasNune: "Bebas Neue", cursive;
+$robotoSlab: "Roboto Slab", serif;
+
+div#containerHeader {
+    background-image: url(../../assets/imgs/lago_com_montanha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header#headerMain {
+    section#my-data {
+        // border: white 1px solid;
+
+        position: relative;
+
+        width: 100%;
+        height: 550px;
+
+        font-family: $bebasNune;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        padding-inline: 3rem;
+
+        div#containerImgs {
+            width: 470px;
+            height: 470px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            // border-radius: 2rem;
+
+            // background-color: #0000002c;
+            // backdrop-filter: blur(15px);
+
+            // box-shadow: 7px 7px 7px #00000083;
+        }
+
+        div#containerInfo {
+            color: white;
+
+            width: 60%;
+            height: 470px;
+
+            display: flex;
+            justify-content: center;
+            border-radius: 2rem;
+
+            background-color: #0000002c;
+            backdrop-filter: blur(15px);
+
+            box-shadow: 7px 7px 7px #192626a2;
+        }
+
+        img#foto {
+            width: 400px;
+            height: 400px;
+
+            filter: drop-shadow(7px 7px 7px #000000cb);
+        }
+
+        div {
+            height: 100%;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            user-select: none;
+        }
+
+        p:nth-child(1) {
+            font-size: 72px;
+            margin-bottom: -20px;
+            filter: drop-shadow(7px 7px 3px #000000cb);
+        }
+
+        p:nth-child(2),
+        p:nth-child(3) {
+            font-size: 36px;
+            margin-bottom: -5px;
+            filter: drop-shadow(7px 7px 3px #000000cb);
+        }
+    }
+}

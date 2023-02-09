@@ -1,58 +1,7 @@
 section#containerSM {
   color: #fff;
   display: flex;
-}
-section#containerSM aside {
-  position: relative;
-  background-image: url(../../assets/imgs/lago_com_montanha.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 470px;
-  margin-left: 30px;
-  font-family: "Bebas Neue", cursive;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 0 0 1rem 1rem;
-  overflow: hidden;
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.4196078431);
-}
-section#containerSM aside img#triangulo {
-  position: absolute;
-  margin: 0;
-  top: 0;
-  left: 0;
-  width: 101%;
-  opacity: 0.9;
-}
-section#containerSM aside img#foto {
-  width: 400px;
-  height: 400px;
-  margin-top: 45px;
-  filter: drop-shadow(7px 7px 7px rgba(0, 0, 0, 0.7960784314));
-}
-section#containerSM aside div {
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-section#containerSM aside p:nth-child(1) {
-  font-size: 72px;
-  margin-bottom: -20px;
-  filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.7960784314));
-}
-section#containerSM aside p:nth-child(2),
-section#containerSM aside p:nth-child(3) {
-  font-size: 36px;
-  margin-bottom: -5px;
-  filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.7960784314));
+  background-color: rgba(25, 38, 38, 0.6352941176);
 }
 section#containerSM section#SobreMim {
   font-family: "Roboto Slab", serif;
