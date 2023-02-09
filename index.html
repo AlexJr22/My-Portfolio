@@ -56,10 +56,9 @@
         <div id="containerHeader">
             <header id="headerMain">
                 <section id="my-data">
-                    <div id="containerImgs">
+                    <div id="containerImgs" class="tiltEffectImg">
                         <img
                             id="foto"
-                            class="tiltEffectImg"
                             src="assets/imgs/minha_foto.png"
                             alt="foto alex junior"
                         />
@@ -134,7 +133,7 @@
             });
 
             VanillaTilt.init(document.querySelector(".tiltEffectImg"), {
-                max: 20,
+                max: 10,
                 speed: 100,
             });
         </script>
