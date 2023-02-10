@@ -7,105 +7,104 @@ $bebasNune: "Bebas Neue", cursive;
 $robotoSlab: "Roboto Slab", serif;
 
 section#tech {
-  width: 100%;
-  background-image: linear-gradient(to bottom, transparent, $color2);
+    width: 100%;
 
-  font-family: $bebasNune;
-
-  display: flex;
-  flex-direction: column;
-
-  h2 {
-    color: $color5;
-    font-size: 55px;
-    text-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
-
-    height: 80px;
+    font-family: $bebasNune;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 
-    margin-top: 55px;
-
-    border-bottom: #5d7f8c solid 110;
-
-    z-index: 3;
-  }
-
-  #containerTech {
-    width: 95%;
-
-    margin: 15px auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    flex-wrap: wrap;
-
-    border-radius: 1rem;
-
-    .card {
-      background-image: url(../../assets/imgs/sky-cicle.jpg);
-      background-size: cover;
-
-      background-position: bottom;
-
-      border: solid 1px;
-      border-top-color: #c9c9c97e;
-      border-left-color: #c9c9c97e;
-      border-right-color: #353535;
-      border-bottom-color: #353535;
-
-      min-width: 110px;
-      max-width: 110px;
-      min-height: 110px;
-      max-height: 110px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 1rem;
-
-      border-radius: 50%;
-
-      box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.7);
-
-      transition: 0.3s linear;
-
-      &:hover {
-        border-radius: 0.8rem;
-
-        img.card-img {
-          transform: translateY(0px);
-        }
-
-        .name-icon {
-          opacity: 0.8;
-          transform: scale(1);
-        }
-      }
-
-      img.card-img {
-        width: 60%;
-        transform: translateY(15px);
-        transition: 0.3s;
-
-        border-radius: 0.7rem;
-      }
-
-      .name-icon {
+    h2 {
         color: $color5;
-        font-size: 25px;
-        overflow: hidden;
+        font-size: 55px;
+        text-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
 
-        opacity: 0;
-        transform: scale(0);
+        height: 80px;
 
-        transition: 0.3s linear;
-      }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 55px;
+
+        border-bottom: #5d7f8c solid 110;
+
+        z-index: 3;
     }
-  }
+
+    #containerTech {
+        width: 95%;
+
+        margin: 15px auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        border-radius: 1rem;
+
+        .card {
+            background-image: url(../../assets/imgs/sky-cicle.jpg);
+            background-size: cover;
+
+            background-position: bottom;
+
+            border: solid 1px;
+            border-top-color: #c9c9c97e;
+            border-left-color: #c9c9c97e;
+            border-right-color: #353535;
+            border-bottom-color: #353535;
+
+            min-width: 110px;
+            max-width: 110px;
+            min-height: 110px;
+            max-height: 110px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+
+            border-radius: 50%;
+
+            box-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.7);
+
+            transition: 0.3s linear;
+
+            &:hover {
+                border-radius: 0.8rem;
+
+                img.card-img {
+                    transform: translateY(0px);
+                }
+
+                .name-icon {
+                    opacity: 0.8;
+                    transform: scale(1);
+                }
+            }
+
+            img.card-img {
+                width: 60%;
+                transform: translateY(15px);
+                transition: 0.3s;
+
+                border-radius: 0.7rem;
+            }
+
+            .name-icon {
+                color: $color5;
+                font-size: 25px;
+                overflow: hidden;
+
+                opacity: 0;
+                transform: scale(0);
+
+                transition: 0.3s linear;
+            }
+        }
+    }
 }
