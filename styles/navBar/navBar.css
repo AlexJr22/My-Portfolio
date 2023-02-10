@@ -47,7 +47,7 @@ nav#navegation button#btn-menu:active .bi-x-lg {
   fill: #d8d9d7;
 }
 nav#navegation.active {
-  position: absolute;
+  position: fixed;
   width: 400px;
   height: 100%;
   margin: 0;
