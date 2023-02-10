@@ -22,7 +22,7 @@ header#headerMain section#my-data div#containerImgs {
   justify-content: center;
   align-items: center;
   margin-right: 30px;
-  border-radius: 2rem;
+  border-radius: 1em;
 }
 header#headerMain section#my-data div#containerInfo {
   color: white;

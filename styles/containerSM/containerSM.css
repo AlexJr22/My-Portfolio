@@ -1,16 +1,17 @@
 section#containerSM {
   color: #fff;
   display: flex;
-  background-color: rgba(25, 38, 38, 0.6352941176);
 }
 section#containerSM section#SobreMim {
+  background-color: rgba(25, 38, 38, 0.6352941176);
   font-family: "Roboto Slab", serif;
   text-align: justify;
   display: flex;
   flex-direction: column;
-  width: 60%;
-  margin-inline: auto;
-  padding: 100px 0px;
+  width: 70%;
+  margin: 25px auto;
+  padding: 100px;
+  border-radius: 1em;
 }
 section#containerSM section#SobreMim h2 {
   color: #d8d9d7;

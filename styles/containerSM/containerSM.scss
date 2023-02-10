@@ -9,19 +9,21 @@ $robotoSlab: "Roboto Slab", serif;
 section#containerSM {
     color: #fff;
     display: flex;
-    background-color: #192626a2;
+
     section#SobreMim {
+        background-color: #192626a2;
+
         font-family: $robotoSlab;
 
         text-align: justify;
 
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 70%;
 
-        margin-inline: auto;
-
-        padding: 100px 0px;
+        margin: 25px auto;
+        padding: 100px;
+        border-radius: 1em;
 
         h2 {
             color: $color5;
