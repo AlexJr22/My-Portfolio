@@ -13,13 +13,23 @@ fetch("./techs.json")
     .then((response) => response.json())
     .then((techs) =>
         techs.forEach(({ icon, tech }) => {
-            containerTech.innerHTML += `
-                <div class="card">
-                    <img class="card-img" src="assets/icons/${icon}" alt="${tech}" />
+            let divCard = document.createElement("div");
+            divCard.classList.add("card");
 
-                    <span class="name-icon">${tech}</span>
-                </div>
-            `;
+            let img = document.createElement("img");
+            let span = document.createElement("span");
+
+            img.classList.add("card-img");
+            img.src = `assets/icons/${icon}`;
+            img.alt = `${tech}`;
+
+            span.classList.add("name-icon");
+            span.innerHTML = `${tech}`;
+
+            divCard.appendChild(img);
+            divCard.appendChild(span);
+
+            containerTech.appendChild(divCard);
         })
     );
 
