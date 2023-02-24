@@ -7,6 +7,9 @@ div#containerHeader {
 
 header#headerMain section#my-data {
   position: relative;
+  background-color: rgba(0, 0, 0, 0.1725490196);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
   width: 100%;
   height: 550px;
   font-family: "Bebas Neue", cursive;
@@ -31,10 +34,6 @@ header#headerMain section#my-data div#containerInfo {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  background-color: rgba(0, 0, 0, 0.1725490196);
-  -webkit-backdrop-filter: blur(15px);
-          backdrop-filter: blur(15px);
-  box-shadow: 7px 7px 7px rgba(25, 38, 38, 0.6352941176);
 }
 header#headerMain section#my-data img#foto {
   width: 400px;

@@ -17,6 +17,10 @@ header#headerMain {
     section#my-data {
         position: relative;
 
+        // border: 1px solid white;
+        background-color: #0000002c;
+        backdrop-filter: blur(15px);
+
         width: 100%;
         height: 550px;
 
@@ -51,10 +55,7 @@ header#headerMain {
             justify-content: center;
             border-radius: 2rem;
 
-            background-color: #0000002c;
-            backdrop-filter: blur(15px);
-
-            box-shadow: 7px 7px 7px #192626a2;
+            // border: 1px solid #d8d9d7;
         }
 
         img#foto {
