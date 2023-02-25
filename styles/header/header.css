@@ -33,7 +33,42 @@ header#headerMain section#my-data div#containerInfo {
   height: 470px;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 2rem;
+  padding: 1em;
+}
+header#headerMain section#my-data div#containerInfo p:nth-child(1) {
+  font-size: 72px;
+  margin-bottom: -20px;
+  filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.7960784314));
+}
+header#headerMain section#my-data div#containerInfo p:nth-child(2),
+header#headerMain section#my-data div#containerInfo p:nth-child(3) {
+  font-size: 36px;
+  margin-bottom: -5px;
+  filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.7960784314));
+}
+header#headerMain section#my-data div#containerInfo #contato {
+  width: 100%;
+  height: 6em;
+  border: 1px solid #d8d9d7;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.05s;
+  transform: translateY(30px);
+}
+header#headerMain section#my-data div#containerInfo #contato:hover {
+  transform: translateY(30px) scale(1.05);
+}
+header#headerMain section#my-data div#containerInfo #contato a {
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+}
+header#headerMain section#my-data div#containerInfo #contato a:hover {
+  color: #7297a6;
 }
 header#headerMain section#my-data img#foto {
   width: 400px;
@@ -45,21 +80,9 @@ header#headerMain section#my-data div {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-}
-header#headerMain section#my-data p:nth-child(1) {
-  font-size: 72px;
-  margin-bottom: -20px;
-  filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.7960784314));
-}
-header#headerMain section#my-data p:nth-child(2),
-header#headerMain section#my-data p:nth-child(3) {
-  font-size: 36px;
-  margin-bottom: -5px;
-  filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.7960784314));
 }
 
 @media screen and (max-width: 1045px) {

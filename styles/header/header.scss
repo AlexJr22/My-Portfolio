@@ -41,7 +41,6 @@ header#headerMain {
             align-items: center;
 
             margin-right: 30px;
-
             border-radius: 1em;
         }
 
@@ -53,9 +52,57 @@ header#headerMain {
 
             display: flex;
             justify-content: center;
+            align-items: center;
             border-radius: 2rem;
+            padding: 1em;
 
             // border: 1px solid #d8d9d7;
+
+            p:nth-child(1) {
+                font-size: 72px;
+                margin-bottom: -20px;
+                filter: drop-shadow(7px 7px 3px #000000cb);
+            }
+
+            p:nth-child(2),
+            p:nth-child(3) {
+                font-size: 36px;
+                margin-bottom: -5px;
+                filter: drop-shadow(7px 7px 3px #000000cb);
+            }
+
+            // > p {
+            //     transform: translatey(-30px);
+            // }
+
+            #contato {
+                width: 100%;
+                height: 6em;
+
+                border: 1px solid #d8d9d7;
+                border-radius: 1rem;
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                transition: 0.05s;
+                transform: translateY(30px);
+
+                &:hover {
+                    transform: translateY(30px) scale(1.05);
+                }
+
+                a {
+                    font-size: 2em;
+                    color: white;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $color4;
+                    }
+                }
+            }
         }
 
         img#foto {
@@ -71,21 +118,7 @@ header#headerMain {
 
             display: flex;
             flex-direction: column;
-            align-items: center;
             user-select: none;
-        }
-
-        p:nth-child(1) {
-            font-size: 72px;
-            margin-bottom: -20px;
-            filter: drop-shadow(7px 7px 3px #000000cb);
-        }
-
-        p:nth-child(2),
-        p:nth-child(3) {
-            font-size: 36px;
-            margin-bottom: -5px;
-            filter: drop-shadow(7px 7px 3px #000000cb);
         }
     }
 }
