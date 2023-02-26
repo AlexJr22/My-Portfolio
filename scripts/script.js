@@ -87,11 +87,11 @@ function saveText() {
         .writeText(text)
         .then(() => {
             alert(
-                "Email copiado para a área de transferência \nMeu Email: alexjr2oficial@gmail.com"
+                "Email copiado para a área de transferência \n📌alexjr2oficial@gmail.com"
             );
         })
         .catch((err) => {
-            alert("Erro ao copiar texto");
+            alert("Erro ao copiar email \n📌alexjr2oficial@gmail.com");
             console.error("Erro ao copiar texto: ", err);
         });
 }
