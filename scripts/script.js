@@ -76,3 +76,24 @@ fetch("./projects.json")
             containerProjects.appendChild(divCardProject);
         })
     );
+
+// evento de click na tag <a>(aEmail)
+
+const tagA_email = document.getElementById("tagA_email");
+
+function saveText() {
+    const text = "alexjr2oficial@gmail.com";
+    navigator.clipboard
+        .writeText(text)
+        .then(() => {
+            alert(
+                "Email copiado para a área de transferência \nMeu Email: alexjr2oficial@gmail.com"
+            );
+        })
+        .catch((err) => {
+            alert("Erro ao copiar texto");
+            console.error("Erro ao copiar texto: ", err);
+        });
+}
+
+tagA_email.addEventListener("click", saveText);
