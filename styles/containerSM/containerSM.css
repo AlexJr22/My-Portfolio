@@ -59,4 +59,9 @@ section#containerSM section#SobreMim div p {
   section#containerSM section#SobreMim {
     padding-inline: 35px;
   }
+}
+@media only screen and (max-width: 425px) {
+  section#containerSM section#SobreMim {
+    padding-inline: 10px;
+  }
 }/*# sourceMappingURL=containerSM.css.map */

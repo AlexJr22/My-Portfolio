@@ -88,3 +88,11 @@ section#containerSM {
         }
     }
 }
+
+@media only screen and (max-width: 425px) {
+    section#containerSM {
+        section#SobreMim {
+            padding-inline: 10px;
+        }
+    }
+}
