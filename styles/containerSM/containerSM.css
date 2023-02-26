@@ -10,7 +10,7 @@ section#containerSM section#SobreMim {
   flex-direction: column;
   width: 70%;
   margin: 25px auto;
-  padding: 100px;
+  padding: 3em;
   border-radius: 1em;
 }
 section#containerSM section#SobreMim h2 {

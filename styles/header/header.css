@@ -1,6 +1,7 @@
 div#containerHeader {
-  background-image: url(../../assets/imgs/lago_com_montanha.jpg);
+  background-image: url(../../assets/imgs/rio.jpg);
   background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   background-attachment: fixed;
 }
