@@ -23,7 +23,7 @@ header#headerMain {
         backdrop-filter: blur(15px);
 
         width: 100%;
-        height: 550px;
+        height: 450px;
 
         font-family: $bebasNune;
 
@@ -62,14 +62,14 @@ header#headerMain {
             p:nth-child(1) {
                 font-size: 72px;
                 margin-bottom: -20px;
-                filter: drop-shadow(7px 7px 3px #000000cb);
+                filter: drop-shadow(7px 7px 3px #00000056);
             }
 
             p:nth-child(2),
             p:nth-child(3) {
                 font-size: 36px;
                 margin-bottom: -5px;
-                filter: drop-shadow(7px 7px 3px #000000cb);
+                filter: drop-shadow(7px 7px 3px #00000056);
             }
 
             #contato {
@@ -152,6 +152,15 @@ header#headerMain {
             }
 
             div#containerInfo {
+                // border: 1px solid wheat;
+
+                height: 100%;
+
+                p:nth-child(2) {
+                    white-space: nowrap;
+                    font-size: 100%;
+                }
+
                 background-image: none;
                 display: flex;
                 justify-content: center;
@@ -181,9 +190,14 @@ header#headerMain {
     }
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 780px) {
     header#headerMain {
+        p:nth-child(2) {
+            transform: translateY(7px);
+        }
         section#my-data {
+            height: 450px;
+
             flex-direction: column;
 
             img#foto {
@@ -193,6 +207,8 @@ header#headerMain {
             }
 
             div#containerInfo {
+                width: 90%;
+                transform: translateY(-25px);
                 p:nth-child(1) {
                     font-size: 45px;
                 }
@@ -213,6 +229,7 @@ header#headerMain {
             flex-direction: column;
 
             padding: 0px;
+            padding-bottom: 15px;
 
             img#foto {
                 padding: 0;
@@ -221,10 +238,25 @@ header#headerMain {
                 width: 170px;
                 height: 170px;
             }
+            div#containerInfo {
+                width: 100%;
+            }
             div {
                 padding: 0;
                 margin: 0;
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header#headerMain {
+        section#my-data {
+            height: 530px;
+            img#foto {
+                width: 250px;
+                height: 250px;
             }
         }
     }

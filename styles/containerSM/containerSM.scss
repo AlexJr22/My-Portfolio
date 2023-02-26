@@ -19,7 +19,7 @@ section#containerSM {
 
         display: flex;
         flex-direction: column;
-        width: 70%;
+        width: min(80%, 1000px);
 
         margin: 25px auto;
         padding: 3em;
@@ -43,11 +43,6 @@ section#containerSM {
 
 @media screen and (max-width: 1045px) {
     section#containerSM {
-        background-image: url(../../assets/imgs/lago_com_montanha.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-
         height: auto;
         transition: 1s;
 

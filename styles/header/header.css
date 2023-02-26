@@ -12,7 +12,7 @@ header#headerMain section#my-data {
   -webkit-backdrop-filter: blur(15px);
           backdrop-filter: blur(15px);
   width: 100%;
-  height: 550px;
+  height: 450px;
   font-family: "Bebas Neue", cursive;
   display: flex;
   align-items: center;
@@ -41,13 +41,13 @@ header#headerMain section#my-data div#containerInfo {
 header#headerMain section#my-data div#containerInfo p:nth-child(1) {
   font-size: 72px;
   margin-bottom: -20px;
-  filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.7960784314));
+  filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.337254902));
 }
 header#headerMain section#my-data div#containerInfo p:nth-child(2),
 header#headerMain section#my-data div#containerInfo p:nth-child(3) {
   font-size: 36px;
   margin-bottom: -5px;
-  filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.7960784314));
+  filter: drop-shadow(7px 7px 3px rgba(0, 0, 0, 0.337254902));
 }
 header#headerMain section#my-data div#containerInfo #contato {
   width: 100%;
@@ -111,6 +111,7 @@ header#headerMain section#my-data div {
     margin: 0px;
   }
   header#headerMain section#my-data div#containerInfo {
+    height: 100%;
     background-image: none;
     display: flex;
     justify-content: center;
@@ -119,6 +120,10 @@ header#headerMain section#my-data div {
     -webkit-backdrop-filter: none;
             backdrop-filter: none;
     box-shadow: none;
+  }
+  header#headerMain section#my-data div#containerInfo p:nth-child(2) {
+    white-space: nowrap;
+    font-size: 100%;
   }
   header#headerMain section#my-data div#containerInfo p:nth-child(1) {
     font-size: 55px;
@@ -133,14 +138,22 @@ header#headerMain section#my-data div {
     margin: 0;
   }
 }
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 780px) {
+  header#headerMain p:nth-child(2) {
+    transform: translateY(7px);
+  }
   header#headerMain section#my-data {
+    height: 450px;
     flex-direction: column;
   }
   header#headerMain section#my-data img#foto {
     width: 200px;
     height: 200px;
     margin-top: 10px;
+  }
+  header#headerMain section#my-data div#containerInfo {
+    width: 90%;
+    transform: translateY(-25px);
   }
   header#headerMain section#my-data div#containerInfo p:nth-child(1) {
     font-size: 45px;
@@ -155,6 +168,7 @@ header#headerMain section#my-data div {
     display: flex;
     flex-direction: column;
     padding: 0px;
+    padding-bottom: 15px;
   }
   header#headerMain section#my-data img#foto {
     padding: 0;
@@ -163,9 +177,21 @@ header#headerMain section#my-data div {
     width: 170px;
     height: 170px;
   }
+  header#headerMain section#my-data div#containerInfo {
+    width: 100%;
+  }
   header#headerMain section#my-data div {
     padding: 0;
     margin: 0;
     width: 100%;
+  }
+}
+@media only screen and (max-width: 320px) {
+  header#headerMain section#my-data {
+    height: 530px;
+  }
+  header#headerMain section#my-data img#foto {
+    width: 250px;
+    height: 250px;
   }
 }/*# sourceMappingURL=header.css.map */
