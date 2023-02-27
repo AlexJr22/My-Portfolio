@@ -14,18 +14,17 @@ section#MyProjects h2 {
 }
 section#MyProjects #projects {
   width: 1200px;
+  height: auto;
   display: flex;
-  white-space: nowrap;
-  overflow: hidden;
-  padding: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-inline: auto;
-  gap: 25px;
   margin-bottom: 1em;
+  padding: 1rem;
 }
 section#MyProjects #projects .cardProject {
   background-color: rgb(27, 27, 34);
-  box-sizing: content-box;
-  min-width: calc(33.3333333333% - 30px);
+  min-width: calc(33.3333333333% - 15px);
   min-height: 350px;
   display: flex;
   align-items: center;
@@ -33,10 +32,8 @@ section#MyProjects #projects .cardProject {
   flex-direction: column;
   border-radius: 1rem;
   padding: 5px;
+  margin-bottom: 1rem;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
-}
-section#MyProjects #projects .cardProject:first-child {
-  margin-left: 0px;
 }
 section#MyProjects #projects .cardProject .projectTitle {
   color: white;
