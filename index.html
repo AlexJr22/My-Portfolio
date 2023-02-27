@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="./styles/style.css" />
     </head>
     <body>
+        <!-- Navegation -->
         <nav id="navegation" class="">
             <a href="#containerHeader">Contato</a>
             <a href="#SobreMim">Sobre mim</a>
@@ -53,6 +54,7 @@
             </button>
         </nav>
 
+        <!-- Header -->
         <div id="containerHeader">
             <header id="headerMain">
                 <section id="my-data">
@@ -127,12 +129,15 @@
                 </section>
             </section>
         </div>
+
+        <!-- techs -->
         <section id="tech">
             <h2>Tecnologias</h2>
 
             <div id="containerTech"></div>
         </section>
 
+        <!-- My Projects -->
         <section id="MyProjects">
             <h2 id="titleProjects">Projetos</h2>
 
@@ -142,16 +147,15 @@
         <script src="scripts/script.js"></script>
         <script src="scripts/vanilla-tilt.js"></script>
         <script type="text/javascript">
-            VanillaTilt.init(document.querySelectorAll(".tiltEffect"), {
-                max: 15,
-                speed: 100,
-                glare: true,
-                "max-glare": 0.5,
-            });
-
             VanillaTilt.init(document.querySelector(".tiltEffectImg"), {
                 max: 20,
                 speed: 100,
+            });
+
+            VanillaTilt.init(document.querySelectorAll("#projects"), {
+                max: 5,
+                speed: 100,
+                axis: "x",
             });
         </script>
     </body>

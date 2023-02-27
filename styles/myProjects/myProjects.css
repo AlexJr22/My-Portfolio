@@ -13,32 +13,30 @@ section#MyProjects h2 {
   margin-bottom: 20px;
 }
 section#MyProjects #projects {
-  width: 95%;
+  width: 1200px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  border-radius: 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  padding: 10px;
   margin-inline: auto;
-  padding-bottom: 15px;
+  gap: 25px;
+  margin-bottom: 1em;
 }
 section#MyProjects #projects .cardProject {
   background-color: rgb(27, 27, 34);
   box-sizing: content-box;
-  width: 350px;
-  height: 350px;
-  margin: 10px;
+  min-width: calc(33.3333333333% - 30px);
+  min-height: 350px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
   border-radius: 1rem;
   padding: 5px;
-  transition: 0.3s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
 }
-section#MyProjects #projects .cardProject:hover {
-  transform: scale(1.05);
+section#MyProjects #projects .cardProject:first-child {
+  margin-left: 0px;
 }
 section#MyProjects #projects .cardProject .projectTitle {
   color: white;
