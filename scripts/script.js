@@ -77,7 +77,7 @@ fetch("./projects.json")
         })
     );
 
-// evento de click na tag <a>(aEmail)
+// evento de click na tagA_email
 
 const tagA_email = document.getElementById("tagA_email");
 
