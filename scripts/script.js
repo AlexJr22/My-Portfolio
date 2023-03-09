@@ -34,6 +34,7 @@ fetch("./techs.json")
     );
 
 // Gerando de forma dinâmica os cards dos projetos
+/*
 const containerProjects = document.getElementById("projects");
 
 fetch("./projects.json")
@@ -76,9 +77,9 @@ fetch("./projects.json")
             containerProjects.appendChild(divCardProject);
         })
     );
+*/
 
 // evento de click na tagA_email
-
 const tagA_email = document.getElementById("tagA_email");
 
 function saveText() {
