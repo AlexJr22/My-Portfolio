@@ -11,4 +11,8 @@ section#MyProjects h2 {
   align-items: center;
   padding-top: 55px;
   margin-bottom: 20px;
+}
+section#MyProjects #projects {
+  height: 450px;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=myProjects.css.map */
