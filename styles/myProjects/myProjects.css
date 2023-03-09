@@ -13,6 +13,14 @@ section#MyProjects h2 {
   margin-bottom: 20px;
 }
 section#MyProjects #projects {
-  height: 450px;
   margin-bottom: 1rem;
+}
+section#MyProjects #projects .carousel.slide {
+  max-width: 700px;
+  padding: 0;
+}
+section#MyProjects #projects .carousel-inner {
+  height: 450px;
+  width: min(700px, 100%);
+  margin: auto;
 }/*# sourceMappingURL=myProjects.css.map */
