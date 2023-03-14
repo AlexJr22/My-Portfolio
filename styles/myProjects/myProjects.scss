@@ -30,6 +30,19 @@ section#MyProjects {
         .carousel.slide {
             max-width: 700px;
             padding: 0;
+
+            button {
+                // background-color: white;
+                .carousel-control-prev-icon,
+                .carousel-control-next-icon {
+                    background-color: #000000;
+
+                    width: 45px;
+                    height: 45px;
+
+                    border-radius: 50%;
+                }
+            }
         }
 
         .carousel-inner {

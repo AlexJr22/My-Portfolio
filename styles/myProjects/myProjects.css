@@ -19,6 +19,13 @@ section#MyProjects #projects .carousel.slide {
   max-width: 700px;
   padding: 0;
 }
+section#MyProjects #projects .carousel.slide button .carousel-control-prev-icon,
+section#MyProjects #projects .carousel.slide button .carousel-control-next-icon {
+  background-color: #000000;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
 section#MyProjects #projects .carousel-inner {
   height: 450px;
   width: min(700px, 100%);
