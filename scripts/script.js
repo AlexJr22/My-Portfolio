@@ -1,3 +1,5 @@
+alert("Portfólio em desenvolvimento!!");
+
 // adicionado um evento de click no 'btnMenu' para ocultar/mostrar o menu de navegação
 const btnMenu = document.getElementById("btn-menu");
 const navegation = document.getElementById("navegation");
@@ -34,50 +36,8 @@ fetch("./techs.json")
     );
 
 // Gerando de forma dinâmica os cards dos projetos
-/*
+
 const containerProjects = document.getElementById("projects");
-
-fetch("./projects.json")
-    .then((response) => response.json())
-    .then((projects) =>
-        projects.forEach(({ name, img, github, page }) => {
-            let divCardProject = document.createElement("div");
-            divCardProject.classList.add("cardProject");
-
-            let h3 = document.createElement("h3");
-            h3.classList.add("projectTitle");
-            h3.innerHTML = `${name}`;
-
-            let divImgProject = document.createElement("div");
-            divImgProject.style.backgroundImage = `url(${img})`;
-            divImgProject.classList.add("imgProject");
-
-            let divContainerBtns = document.createElement("div");
-            divContainerBtns.classList.add("containerBtns");
-
-            let btn1 = document.createElement("a");
-            btn1.classList.add("btn-1");
-            btn1.href = page;
-            btn1.target = "_blank";
-            btn1.innerHTML = "Veja Mais";
-
-            let btn2 = document.createElement("a");
-            btn2.classList.add("btn-2");
-            btn2.href = github;
-            btn2.target = "_blank";
-            btn2.innerHTML = "GitHub";
-
-            divContainerBtns.appendChild(btn1);
-            divContainerBtns.appendChild(btn2);
-
-            divCardProject.appendChild(h3);
-            divCardProject.appendChild(divImgProject);
-            divCardProject.appendChild(divContainerBtns);
-
-            containerProjects.appendChild(divCardProject);
-        })
-    );
-*/
 
 // evento de click na tagA_email
 const tagA_email = document.getElementById("tagA_email");
