@@ -13,7 +13,7 @@ section#MyProjects h2 {
   margin-bottom: 20px;
 }
 section#MyProjects #projects {
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 section#MyProjects #projects .carousel.slide {
   max-width: 700px;
@@ -23,4 +23,29 @@ section#MyProjects #projects .carousel-inner {
   height: 450px;
   width: min(700px, 100%);
   margin: auto;
+}
+section#MyProjects #projects .carousel-inner .projetcSlider {
+  background-color: rgba(255, 255, 255, 0.401);
+  height: 450px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+section#MyProjects #projects .carousel-inner .projetcSlider h3 {
+  color: white;
+  font-size: 3em;
+  margin: 1rem 0rem;
+}
+section#MyProjects #projects .carousel-inner .projetcSlider .containerButtons {
+  position: absolute;
+  bottom: 5rem;
+  width: 30%;
+  gap: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+section#MyProjects #projects .carousel-inner .projetcSlider .containerButtons button {
+  width: 80px;
 }/*# sourceMappingURL=myProjects.css.map */
