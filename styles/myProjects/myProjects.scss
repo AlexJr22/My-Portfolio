@@ -33,13 +33,14 @@ section#MyProjects {
 
             button {
                 // background-color: white;
-                .carousel-control-prev-icon,
-                .carousel-control-next-icon {
+                .bi.bi-caret-right-fill,
+                .bi.bi-caret-left-fill {
                     background-color: #000000;
 
-                    width: 45px;
-                    height: 45px;
+                    width: 40px;
+                    height: 40px;
 
+                    border: solid 5px #000000;
                     border-radius: 50%;
                 }
             }
@@ -52,6 +53,11 @@ section#MyProjects {
 
             .projetcSlider {
                 background-color: rgba(255, 255, 255, 0.401);
+
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+
                 height: 450px;
                 position: relative;
 
@@ -70,10 +76,9 @@ section#MyProjects {
 
                 .containerButtons {
                     position: absolute;
-                    bottom: 5rem;
+                    bottom: 4rem;
 
                     width: 30%;
-                    gap: 2rem;
 
                     display: flex;
                     justify-content: space-around;

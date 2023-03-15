@@ -19,11 +19,12 @@ section#MyProjects #projects .carousel.slide {
   max-width: 700px;
   padding: 0;
 }
-section#MyProjects #projects .carousel.slide button .carousel-control-prev-icon,
-section#MyProjects #projects .carousel.slide button .carousel-control-next-icon {
+section#MyProjects #projects .carousel.slide button .bi.bi-caret-right-fill,
+section#MyProjects #projects .carousel.slide button .bi.bi-caret-left-fill {
   background-color: #000000;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
+  border: solid 5px #000000;
   border-radius: 50%;
 }
 section#MyProjects #projects .carousel-inner {
@@ -33,6 +34,9 @@ section#MyProjects #projects .carousel-inner {
 }
 section#MyProjects #projects .carousel-inner .projetcSlider {
   background-color: rgba(255, 255, 255, 0.401);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   height: 450px;
   position: relative;
   display: flex;
@@ -47,9 +51,8 @@ section#MyProjects #projects .carousel-inner .projetcSlider h3 {
 }
 section#MyProjects #projects .carousel-inner .projetcSlider .containerButtons {
   position: absolute;
-  bottom: 5rem;
+  bottom: 4rem;
   width: 30%;
-  gap: 2rem;
   display: flex;
   justify-content: space-around;
 }

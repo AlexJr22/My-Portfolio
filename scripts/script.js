@@ -1,4 +1,4 @@
-alert("Portfólio em desenvolvimento!!");
+// alert("Portfólio em desenvolvimento!!");
 
 // adicionado um evento de click no 'btnMenu' para ocultar/mostrar o menu de navegação
 const btnMenu = document.getElementById("btn-menu");
