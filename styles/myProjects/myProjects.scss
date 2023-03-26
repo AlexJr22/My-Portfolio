@@ -6,88 +6,20 @@ $color5: #d8d9d7;
 $bebasNune: "Bebas Neue", cursive;
 $robotoSlab: "Roboto Slab", serif;
 
-section#MyProjects {
-    font-family: $bebasNune;
+#MyProjects {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
 
     h2 {
-        color: $color5;
         font-size: 55px;
-        text-shadow: 5px 5px 10px rgba($color: #000000, $alpha: 0.5);
-
-        height: 80px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        padding-top: 55px;
-        margin-bottom: 20px;
+        font-family: $bebasNune;
+        color: white;
     }
 
-    #projects {
-        margin-bottom: 3rem;
-
-        .carousel.slide {
-            max-width: 700px;
-            padding: 0;
-
-            button {
-                // background-color: white;
-                .bi.bi-caret-right-fill,
-                .bi.bi-caret-left-fill {
-                    background-color: #000000;
-
-                    width: 40px;
-                    height: 40px;
-
-                    border: solid 5px #000000;
-                    border-radius: 50%;
-                }
-            }
-        }
-
-        .carousel-inner {
-            height: 450px;
-            width: min(700px, 100%);
-            margin: auto;
-
-            .projetcSlider {
-                background-color: rgba(255, 255, 255, 0.401);
-
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center center;
-
-                height: 450px;
-                position: relative;
-
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-
-                border-radius: 1rem;
-
-                h3 {
-                    color: white;
-                    font-size: 3em;
-
-                    margin: 1rem 0rem;
-                }
-
-                .containerButtons {
-                    position: absolute;
-                    bottom: 4rem;
-
-                    width: 30%;
-
-                    display: flex;
-                    justify-content: space-around;
-
-                    button {
-                        width: 80px;
-                    }
-                }
-            }
-        }
+    p {
+        color: white;
     }
 }

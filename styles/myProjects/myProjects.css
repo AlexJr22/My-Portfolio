@@ -1,61 +1,14 @@
-section#MyProjects {
-  font-family: "Bebas Neue", cursive;
-}
-section#MyProjects h2 {
-  color: #d8d9d7;
-  font-size: 55px;
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-  height: 80px;
+#MyProjects {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 55px;
-  margin-bottom: 20px;
-}
-section#MyProjects #projects {
-  margin-bottom: 3rem;
-}
-section#MyProjects #projects .carousel.slide {
-  max-width: 700px;
-  padding: 0;
-}
-section#MyProjects #projects .carousel.slide button .bi.bi-caret-right-fill,
-section#MyProjects #projects .carousel.slide button .bi.bi-caret-left-fill {
-  background-color: #000000;
-  width: 40px;
-  height: 40px;
-  border: solid 5px #000000;
-  border-radius: 50%;
-}
-section#MyProjects #projects .carousel-inner {
-  height: 450px;
-  width: min(700px, 100%);
-  margin: auto;
-}
-section#MyProjects #projects .carousel-inner .projetcSlider {
-  background-color: rgba(255, 255, 255, 0.401);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 450px;
-  position: relative;
-  display: flex;
-  align-items: center;
   flex-direction: column;
-  border-radius: 1rem;
+  align-items: center;
+  justify-content: center;
 }
-section#MyProjects #projects .carousel-inner .projetcSlider h3 {
+#MyProjects h2 {
+  font-size: 55px;
+  font-family: "Bebas Neue", cursive;
   color: white;
-  font-size: 3em;
-  margin: 1rem 0rem;
 }
-section#MyProjects #projects .carousel-inner .projetcSlider .containerButtons {
-  position: absolute;
-  bottom: 4rem;
-  width: 30%;
-  display: flex;
-  justify-content: space-around;
-}
-section#MyProjects #projects .carousel-inner .projetcSlider .containerButtons button {
-  width: 80px;
+#MyProjects p {
+  color: white;
 }/*# sourceMappingURL=myProjects.css.map */
