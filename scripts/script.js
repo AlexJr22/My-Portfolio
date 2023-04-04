@@ -3,17 +3,19 @@ alert(
     "Caso ache algum erro, Por favor entre em contato comigo para que eu possa corrigi-lo!"
 );
 
-// adicionado um evento de click no 'btnMenu' para ocultar/mostrar o menu de navegação
+// variaveis
 const btnMenu = document.getElementById("btn-menu");
 const navegation = document.getElementById("navegation");
+const containerTech = document.getElementById("containerTech");
+const containerProjects = document.getElementById("projects");
+const tagA_email = document.getElementById("tagA_email");
 
+// adicionado um evento de click no 'btnMenu' para ocultar/mostrar o menu de navegação
 btnMenu.addEventListener("click", () => {
     navegation.classList.toggle("active");
 });
 
 // gerando de forma dinâmica os icones das tecnologias
-const containerTech = document.getElementById("containerTech");
-
 fetch("./techs.json")
     .then((response) => response.json())
     .then((techs) =>
@@ -38,13 +40,7 @@ fetch("./techs.json")
         })
     );
 
-// Gerando de forma dinâmica os cards dos projetos
-
-const containerProjects = document.getElementById("projects");
-
 // evento de click na tagA_email
-const tagA_email = document.getElementById("tagA_email");
-
 function saveText() {
     const text = "alexjr2oficial@gmail.com";
     navigator.clipboard
