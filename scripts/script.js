@@ -1,6 +1,6 @@
 alert("Portfólio em desenvolvimento!!");
 alert(
-    "Caso ache algum erro, Por favir entre em contato comigo para que eu possa corrigi-lo!"
+    "Caso ache algum erro, Por favor entre em contato comigo para que eu possa corrigi-lo!"
 );
 
 // adicionado um evento de click no 'btnMenu' para ocultar/mostrar o menu de navegação
